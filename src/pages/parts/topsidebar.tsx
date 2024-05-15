@@ -4,7 +4,7 @@ import { FaSearch } from "react-icons/fa";
 import { SiBigbluebutton } from "react-icons/si";
 import { Card, Space } from "antd";
 
-export default function topSideBar() {
+export default function TopSideBar() {
   return (
     // <div className="flex flex-col bg-slate-100 rounded-lg p-6 mt-4 ml-3 w-40 dark:bg-slate-800 ">
     <Space

@@ -9,7 +9,7 @@ import { FaPlus } from "react-icons/fa";
 import { Button, ConfigProvider, Flex } from "antd";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
-export default function headerwithoutlogin() {
+export default function Headerwithoutlogin() {
   return (
     // <main className="flex min-h-screen flex-col items-center justify-between p-24">
     // <div className="flex flex-col bg-slate-100 rounded-lg p-6 mt-4 ml-3 w-40 dark:bg-slate-800 ">

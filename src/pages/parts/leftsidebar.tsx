@@ -7,7 +7,7 @@ import { MdLibraryMusic } from "react-icons/md";
 import { FaPlus } from "react-icons/fa";
 import { Button, ConfigProvider, Flex } from "antd";
 
-export default function leftSideBar() {
+export default function LeftSideBar() {
   return (
     <Space
       direction="vertical"
