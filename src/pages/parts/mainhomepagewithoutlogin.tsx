@@ -134,7 +134,7 @@ const playlists = [
 ];
 export default function Mainhomepagewithoutlogin() {
   return (
-    <div className="flex-col">
+    <div className="">
       <Space direction="horizontal" className="">
         <div className="  p-3 m-3 justify-self-end">Popular artists</div>
         <div className=" p-3 m-3 justify-self-end place-items-end justify-items-end align-items-end">
@@ -147,126 +147,118 @@ export default function Mainhomepagewithoutlogin() {
         </div>
       </Space>
 
-      <div className="flex justify-between  pl-12">
+      <div className="flex flex-row justify-between  pl-12">
         <Space direction="horizontal" className="">
-          <div className="">
-            {artists.map((artist) => (
-              <Card
-                key={artist.id}
-                className="bg-transparent border-transparent"
-                hoverable
-                style={{ width: 240, height: 320 }}
-                cover={
-                  <Avatar
-                    size={238}
-                    src={<img src={artist.image} alt="avatar" />}
-                  />
-                }
-              >
-                <p>
-                  <b>{artist.name}</b>
-                </p>
-                <p>artist</p>
-              </Card>
-            ))}
-          </div>
+          {artists.map((artist) => (
+            <Card
+              key={artist.id}
+              className="bg-transparent border-transparent"
+              hoverable
+              style={{ width: 240, height: 320 }}
+              cover={
+                <Avatar
+                  size={238}
+                  src={<img src={artist.image} alt="avatar" />}
+                />
+              }
+            >
+              <p>
+                <b>{artist.name}</b>
+              </p>
+              <p>artist</p>
+            </Card>
+          ))}
         </Space>
       </div>
-      <div className="flex-row">
+      <Space direction="horizontal" className="flex-row">
         <div className=" p-3 m-3 justify-self-end">Popular albums</div>
         <div className=" p-3 m-3 justify-self-end">
           <Button type="text">show all</Button>
         </div>
-      </div>
+      </Space>
       <div className="flex justify-between  pl-12">
         <Space direction="horizontal" className="">
-          <div className="">
-            {albums.map((album) => (
-              <Card
-                key={album.id}
-                className="bg-transparent border-transparent"
-                hoverable
-                style={{ width: 240, height: 320 }}
-                cover={
-                  <Avatar
-                    shape="square"
-                    size={238}
-                    src={<img src={album.image} alt="avatar" />}
-                  />
-                }
-              >
-                {/* <Meta title="alan walker" description="artist" /> */}
-                <p>
-                  <b>{album.name}</b>
-                </p>
-                <p>{album.artist}</p>
-              </Card>
-            ))}
-          </div>
+          {albums.map((album) => (
+            <Card
+              key={album.id}
+              className="bg-transparent border-transparent"
+              hoverable
+              style={{ width: 240, height: 320 }}
+              cover={
+                <Avatar
+                  shape="square"
+                  size={238}
+                  src={<img src={album.image} alt="avatar" />}
+                />
+              }
+            >
+              {/* <Meta title="alan walker" description="artist" /> */}
+              <p>
+                <b>{album.name}</b>
+              </p>
+              <p>{album.artist}</p>
+            </Card>
+          ))}
         </Space>
       </div>
-      <div className="flex-row">
+      <Space direction="horizontal" className="flex-row">
         <div className="  p-3 m-3 justify-self-end">Popular radio</div>
         <div className=" p-3 m-3 justify-self-end">
           <Button type="text">show all</Button>
         </div>
-      </div>
+      </Space>
       <div className="flex justify-between pl-12">
         <Space direction="horizontal" className="">
-          <div className="">
-            {radio.map((radio) => (
-              <Card
-                key={radio.id}
-                className="bg-transparent border-transparent"
-                hoverable
-                style={{ width: 240, height: 320 }}
-                cover={
-                  <Avatar
-                    shape="square"
-                    size={238}
-                    src={<img src={radio.image} alt="avatar" />}
-                  />
-                }
-              >
-                {/* <Meta title="alan walker" description="artist" /> */}
-                <p>
-                  <b>{radio.name}</b>
-                </p>
-              </Card>
-            ))}
-          </div>
+          {radio.map((radio) => (
+            <Card
+              key={radio.id}
+              className="bg-transparent border-transparent"
+              hoverable
+              style={{ width: 240, height: 320 }}
+              cover={
+                <Avatar
+                  shape="square"
+                  size={238}
+                  src={<img src={radio.image} alt="avatar" />}
+                />
+              }
+            >
+              {/* <Meta title="alan walker" description="artist" /> */}
+              <p>
+                <b>{radio.name}</b>
+              </p>
+            </Card>
+          ))}
         </Space>
       </div>
-      <div className="flex-row">
+      <Space direction="horizontal" className="flex-row">
         <div className=" p-3 m-3 justify-self-end">BEATplus playlists</div>
         <div className=" p-3 m-3 justify-self-end">
           <Button type="text">show all</Button>
         </div>
-      </div>
+      </Space>
       <div className="flex justify-between pl-12">
         <Space direction="horizontal" className="">
-          <div className="">
-            {playlists.map((playlist) => (
-              <Card
-                key={playlist.id}
-                className="bg-transparent border-transparent"
-                hoverable
-                style={{ width: 240, height: 320 }}
-                cover={
-                  <Avatar
-                    shape="square"
-                    size={238}
-                    src={<img src={playlist.image} alt="avatar" />}
-                  />
-                }
-              >
-                {/* <Meta title="alan walker" description="artist" /> */}
-                <p>
-                  <b>{playlist.name}</b>
-                </p>
-              </Card>
-            ))}
-          </div>
+          {playlists.map((playlist) => (
+            <Card
+              key={playlist.id}
+              className="bg-transparent border-transparent"
+              hoverable
+              style={{ width: 240, height: 320 }}
+              cover={
+                <Avatar
+                  shape="square"
+                  size={238}
+                  src={<img src={playlist.image} alt="avatar" />}
+                />
+              }
+            >
+              {/* <Meta title="alan walker" description="artist" /> */}
+              <p>
+                <b>{playlist.name}</b>
+              </p>
+            </Card>
+          ))}
         </Space>
       </div>
     </div>

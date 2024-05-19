@@ -9,7 +9,7 @@ export default function TopSideBar() {
     // <div className="flex flex-col bg-slate-100 rounded-lg p-6 mt-4 ml-3 w-40 dark:bg-slate-800 ">
     <Space
       direction="vertical"
-      className="bg-slate-100 rounded-lg p-6 mt-4 ml-3 w-40 dark:bg-slate-800"
+      className="bg-slate-100 rounded-lg p-6 mt-4 ml-3 w-60 dark:bg-slate-800"
     >
       <div className="flex flex-row justify-left space-x-2 transition ease-in-out delay-50 hover:text-rose-900 hover:-translate-y-1 hover:scale-110 duration-300 text-slate-800 dark:text-slate-100">
         <div className="">
