@@ -8,10 +8,10 @@ import { SiBigbluebutton } from "react-icons/si";
 import { Card, Avatar, Space } from "antd";
 import { MdLibraryMusic } from "react-icons/md";
 import { FaPlus } from "react-icons/fa";
-import { Button, ConfigProvider, Flex } from "antd";
+import { Button, Checkbox, ConfigProvider, Flex } from "antd";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
-import { Input } from "antd";
+import { Input, Form } from "antd";
 import image from "../src/assets/pictures/book4.jpg";
 import type { MenuProps } from "antd";
 import { Breadcrumb, Layout, Menu, theme } from "antd";
@@ -20,7 +20,11 @@ import LeftSideBar from "../src/pages/parts/leftsidebar";
 import TopSideBar from "@/src/pages/parts/topsidebar";
 import Mainhomepagewithoutlogin from "@/src/pages/parts/mainhomepagewithoutlogin";
 import { Segmented } from "antd";
-
+import { Modal } from "antd";
+import { createStyles, useTheme } from "antd-style";
+import { FaGoogle } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaApple } from "react-icons/fa";
 const { Header, Content, Footer, Sider } = Layout;
 export default function Home() {
   const [collapsed, setCollapsed] = useState(false);
