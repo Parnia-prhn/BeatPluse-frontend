@@ -25,7 +25,11 @@ import { createStyles, useTheme } from "antd-style";
 import { FaGoogle } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaApple } from "react-icons/fa";
+import { IoFilter } from "react-icons/io5";
+import { IoIosNotifications } from "react-icons/io";
+import { FaUser } from "react-icons/fa";
 const { Header, Content, Footer, Sider } = Layout;
+
 export default function Home() {
   const [collapsed, setCollapsed] = useState(false);
   const {
