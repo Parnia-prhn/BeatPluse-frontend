@@ -14,7 +14,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { Input, Form } from "antd";
 import image from "../src/assets/pictures/book4.jpg";
 import type { MenuProps } from "antd";
-import { Breadcrumb, Layout, Menu, theme } from "antd";
+import { Breadcrumb, Layout, Menu, theme, Table } from "antd";
 import Headerw from "@/src/pages/parts/headerwithoutlogin";
 import LeftSideBar from "../src/pages/parts/leftsidebar";
 import TopSideBar from "@/src/pages/parts/topsidebar";
@@ -30,6 +30,11 @@ import { IoIosNotifications } from "react-icons/io";
 import { FaUser } from "react-icons/fa";
 import { GoKebabHorizontal } from "react-icons/go";
 import { FaPlay } from "react-icons/fa";
+import type { TableProps } from "antd";
+import { FaShuffle } from "react-icons/fa6";
+import { MdOutlineDownloadForOffline } from "react-icons/md";
+import { FaUserPlus } from "react-icons/fa6";
+import { TfiMenuAlt } from "react-icons/tfi";
 const { Header, Content, Footer, Sider } = Layout;
 
 export default function Home() {
