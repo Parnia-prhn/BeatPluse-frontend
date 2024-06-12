@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { useRef, MouseEvent } from "react";
 import Image from "next/image";
 import head from "next/head";
 import { AiFillHome } from "react-icons/ai";
@@ -35,20 +36,27 @@ import { FaShuffle } from "react-icons/fa6";
 import { MdOutlineDownloadForOffline } from "react-icons/md";
 import { FaUserPlus } from "react-icons/fa6";
 import { TfiMenuAlt } from "react-icons/tfi";
+import { CiCirclePlus } from "react-icons/ci";
+import { FaBackwardStep } from "react-icons/fa6";
+import { ImNext2 } from "react-icons/im";
+import { TfiLoop } from "react-icons/tfi";
+import type { InputNumberProps } from "antd";
+import { Col, InputNumber, Row, Slider } from "antd";
+import { AiOutlinePlaySquare } from "react-icons/ai";
+import { LuMic2 } from "react-icons/lu";
+import { TiThMenu } from "react-icons/ti";
+import { FaComputer } from "react-icons/fa6";
+import { RxSpeakerLoud } from "react-icons/rx";
+import { AiOutlineFullscreen } from "react-icons/ai";
 const { Header, Content, Footer, Sider } = Layout;
 
 export default function Home() {
-  const [collapsed, setCollapsed] = useState(false);
-  const {
-    token: { colorBgContainer, borderRadiusLG },
-  } = theme.useToken();
-
   return (
     // <main className="flex min-h-screen flex-col items-center justify-between p-24">
     // <div className="flex flex-col bg-slate-100 rounded-lg p-6 mt-4 ml-3 w-40 dark:bg-slate-800 ">
     <div>
       {/* <Layout>
-        <Sider width="25%">
+        <Sider theme="light">
           <TopSideBar />
           <LeftSideBar />
         </Sider>
@@ -66,6 +74,19 @@ export default function Home() {
       {/* <LeftSideBar /> */}
       {/* <Mainhomepagewithoutlogin /> */}
       {/*---------------------------------------------------------------------*/}
+
+      {/* <div>
+        <header>
+          <Headerw />
+        </header>
+        <aside>
+          <TopSideBar />
+          <LeftSideBar />
+        </aside>
+        <main>
+          <Mainhomepagewithoutlogin />
+        </main>
+      </div> */}
     </div>
     //{"</div> "}
 
