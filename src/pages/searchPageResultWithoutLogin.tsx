@@ -4,26 +4,30 @@ import HeaderSearch from "./parts/headersearch";
 import LeftSideBar from "./parts/leftsidebar";
 import TopSideBar from "./parts/topsidebar";
 import SearchResult from "./parts/searchresult";
-import { Breadcrumb, Layout, Menu, theme, Table } from "antd";
+import { Breadcrumb, Layout, Menu, theme, Table, ConfigProvider } from "antd";
+import Theme from "../../themeConfig";
+
 const { Header, Content, Footer, Sider } = Layout;
 export default function SearchPageResultWithoutLogin() {
   return (
     <div>
-      <Layout>
-        <Header style={{ display: "flex", alignItems: "center" }}>
-          <HeaderSearch />
-        </Header>
-
+      <ConfigProvider theme={Theme}>
         <Layout>
-          <Sider width={300}>
-            <TopSideBar />
-            <LeftSideBar />
-          </Sider>
-          <Layout style={{ padding: "0 24px 24px" }}>
-            <SearchResult />
+          <Header style={{ display: "flex", alignItems: "center" }}>
+            <HeaderSearch />
+          </Header>
+
+          <Layout>
+            <Sider width={300}>
+              <TopSideBar />
+              <LeftSideBar />
+            </Sider>
+            <Layout style={{ padding: "0 24px 24px" }}>
+              <SearchResult />
+            </Layout>
           </Layout>
         </Layout>
-      </Layout>
+      </ConfigProvider>
     </div>
   );
 }

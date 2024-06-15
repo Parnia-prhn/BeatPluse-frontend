@@ -18,86 +18,19 @@ export default function Headerwithoutlogin() {
         <div className="flex flex-row justify-items-center">
           <div className="flex-row">
             <Space align="start">
-              <ConfigProvider
-                theme={{
-                  components: {
-                    Button: {
-                      defaultBg: "#1E293B",
-                      defaultActiveColor: "#F1F5F9",
-                      defaultActiveBg: "#F1F5F9",
-                      defaultBorderColor: "#F8FAFC",
-                      defaultColor: "#F1F5F9",
-                      defaultHoverBg: "#881337",
-                      defaultHoverBorderColor: "#F8FAFC",
-                      defaultHoverColor: "#F1F5F9",
-                    },
-                  },
-                }}
-              >
-                <Button shape="circle" icon={<IoIosArrowBack />} />
-              </ConfigProvider>
-              <ConfigProvider
-                theme={{
-                  components: {
-                    Button: {
-                      defaultBg: "#1E293B",
-                      defaultActiveColor: "#F1F5F9",
-                      defaultActiveBg: "#F1F5F9",
-                      defaultBorderColor: "#F8FAFC",
-                      defaultColor: "#F1F5F9",
-                      defaultHoverBg: "#881337",
-                      defaultHoverBorderColor: "#F8FAFC",
-                      defaultHoverColor: "#F1F5F9",
-                    },
-                  },
-                }}
-              >
-                <Button shape="circle" icon={<IoIosArrowForward />} />
-              </ConfigProvider>
+              <Button shape="circle" icon={<IoIosArrowBack />} />
+
+              <Button shape="circle" icon={<IoIosArrowForward />} />
             </Space>
           </div>
         </div>
         <div className="flex flex-row justify-items-end justify-end">
           <div className="flex flex-row justify-items-end justify-end">
             <div>
-              <ConfigProvider
-                theme={{
-                  components: {
-                    Button: {
-                      defaultBg: "#1E293B",
-                      defaultActiveColor: "#F1F5F9",
-                      defaultActiveBg: "#F1F5F9",
-                      defaultBorderColor: "#F8FAFC",
-                      defaultColor: "#F1F5F9",
-                      defaultHoverBg: "#881337",
-                      defaultHoverBorderColor: "#F8FAFC",
-                      defaultHoverColor: "#F1F5F9",
-                    },
-                  },
-                }}
-              >
-                <Button shape="round">signup</Button>
-              </ConfigProvider>
+              <Button shape="round">signup</Button>
             </div>
             <div>
-              <ConfigProvider
-                theme={{
-                  components: {
-                    Button: {
-                      defaultBg: "#1E293B",
-                      defaultActiveColor: "#F1F5F9",
-                      defaultActiveBg: "#F1F5F9",
-                      defaultBorderColor: "#F8FAFC",
-                      defaultColor: "#F1F5F9",
-                      defaultHoverBg: "#881337",
-                      defaultHoverBorderColor: "#F8FAFC",
-                      defaultHoverColor: "#F1F5F9",
-                    },
-                  },
-                }}
-              >
-                <Button shape="round">login</Button>
-              </ConfigProvider>
+              <Button shape="round">login</Button>
             </div>
           </div>
         </div>

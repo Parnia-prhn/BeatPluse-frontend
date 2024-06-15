@@ -29,24 +29,8 @@ export default function LeftSideBar() {
         >
           <div>creat your first playlist</div>
           <div>it's easy! we'll help you </div>
-          <ConfigProvider
-            theme={{
-              components: {
-                Button: {
-                  defaultBg: "#1E293B",
-                  defaultActiveColor: "#F1F5F9",
-                  defaultActiveBg: "#F1F5F9",
-                  defaultBorderColor: "#F8FAFC",
-                  defaultColor: "#F1F5F9",
-                  defaultHoverBg: "#881337",
-                  defaultHoverBorderColor: "#F8FAFC",
-                  defaultHoverColor: "#F1F5F9",
-                },
-              },
-            }}
-          >
-            <Button shape="round">create playlist</Button>
-          </ConfigProvider>
+
+          <Button shape="round">create playlist</Button>
         </Space>
         <Space
           direction="vertical"
@@ -54,45 +38,12 @@ export default function LeftSideBar() {
         >
           <div>creat your first playlist</div>
           <div>it's easy! we'll help you </div>
-          <ConfigProvider
-            theme={{
-              components: {
-                Button: {
-                  defaultBg: "#1E293B",
-                  defaultActiveColor: "#F1F5F9",
-                  defaultActiveBg: "#F1F5F9",
-                  defaultBorderColor: "#F8FAFC",
-                  defaultColor: "#F1F5F9",
-                  defaultHoverBg: "#881337",
-                  defaultHoverBorderColor: "#F8FAFC",
-                  defaultHoverColor: "#F1F5F9",
-                },
-              },
-            }}
-          >
-            <Button shape="round">create playlist</Button>
-          </ConfigProvider>
+
+          <Button shape="round">create playlist</Button>
         </Space>
       </div>
       <div className="flex justify-center mt-4">
-        <ConfigProvider
-          theme={{
-            components: {
-              Button: {
-                defaultBg: "#1E293B",
-                defaultActiveColor: "#F1F5F9",
-                defaultActiveBg: "#F1F5F9",
-                defaultBorderColor: "#F8FAFC",
-                defaultColor: "#F1F5F9",
-                defaultHoverBg: "#881337",
-                defaultHoverBorderColor: "#F8FAFC",
-                defaultHoverColor: "#F1F5F9",
-              },
-            },
-          }}
-        >
-          <Button shape="round">fa/en</Button>
-        </ConfigProvider>
+        <Button shape="round">fa/en</Button>
       </div>
     </Space>
   );
