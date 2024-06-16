@@ -136,21 +136,7 @@ export default function Mainhomepagewithlogin() {
   return (
     <div className="">
       <div className="flex justify-start m-1">
-        <ConfigProvider
-          theme={{
-            components: {
-              Segmented: {
-                itemActiveBg: "#64748B",
-                itemColor: "#F1F5F9",
-                itemSelectedBg: "#F1F5F9",
-                itemSelectedColor: "#1E293B",
-                trackBg: "#475569",
-              },
-            },
-          }}
-        >
-          <Segmented<string> options={["Albums", "Artists", "Playlists"]} />
-        </ConfigProvider>
+        <Segmented<string> options={["Albums", "Artists", "Playlists"]} />
       </div>
       <div className="flex flex-row">
         {playlists.map((playlist) => (

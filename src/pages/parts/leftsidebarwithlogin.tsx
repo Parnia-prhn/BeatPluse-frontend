@@ -54,21 +54,7 @@ export default function LeftSideBarwithlogin() {
 
         <div className="flex flex-col overflow-y-scroll  w-60 h-40 mt-7 bg-slate-300">
           <div className="flex justify-center m-1">
-            <ConfigProvider
-              theme={{
-                components: {
-                  Segmented: {
-                    itemActiveBg: "#64748B",
-                    itemColor: "#F1F5F9",
-                    itemSelectedBg: "#F1F5F9",
-                    itemSelectedColor: "#1E293B",
-                    trackBg: "#475569",
-                  },
-                },
-              }}
-            >
-              <Segmented<string> options={["Albums", "Artists", "Playlists"]} />
-            </ConfigProvider>
+            <Segmented<string> options={["Albums", "Artists", "Playlists"]} />
           </div>
           <div className="flex flex-row m-1">
             <FaSearch />
@@ -88,24 +74,7 @@ export default function LeftSideBarwithlogin() {
           ))}
         </div>
         <div className="flex justify-center mt-4">
-          <ConfigProvider
-            theme={{
-              components: {
-                Button: {
-                  defaultBg: "#1E293B",
-                  defaultActiveColor: "#F1F5F9",
-                  defaultActiveBg: "#F1F5F9",
-                  defaultBorderColor: "#F8FAFC",
-                  defaultColor: "#F1F5F9",
-                  defaultHoverBg: "#881337",
-                  defaultHoverBorderColor: "#F8FAFC",
-                  defaultHoverColor: "#F1F5F9",
-                },
-              },
-            }}
-          >
-            <Button shape="round">fa/en</Button>
-          </ConfigProvider>
+          <Button shape="round">fa/en</Button>
         </div>
       </Space>
     </div>
