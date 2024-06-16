@@ -1,11 +1,7 @@
 import * as React from "react";
-import { AiFillHome } from "react-icons/ai";
-import { FaSearch } from "react-icons/fa";
-import { SiBigbluebutton } from "react-icons/si";
-import { Card, Space } from "antd";
+import { Button, Space } from "antd";
 import { MdLibraryMusic } from "react-icons/md";
 import { FaPlus } from "react-icons/fa";
-import { Button, ConfigProvider, Flex } from "antd";
 
 export default function LeftSideBar() {
   return (

@@ -1,12 +1,6 @@
 import * as React from "react";
-import { AiFillHome } from "react-icons/ai";
-import { FaSearch } from "react-icons/fa";
-import { SiBigbluebutton } from "react-icons/si";
-import { Card, Space, Segmented } from "antd";
-import { MdLibraryMusic } from "react-icons/md";
-import { FaPlus } from "react-icons/fa";
-import { Button, ConfigProvider, Flex } from "antd";
-import { IoFilter } from "react-icons/io5";
+import { Segmented } from "antd";
+
 const playlists = [
   {
     id: 1,
@@ -40,21 +34,7 @@ export default function RightSideBarQueue() {
     <div className="bg-slate-100 rounded-lg box-content h-80 w-60 p-3 mt-4 ml-3  dark:bg-slate-800">
       <div className="flex flex-col overflow-y-scroll  w-60 h-60 mt-7 bg-slate-300">
         <div className="flex justify-center m-1">
-          <ConfigProvider
-            theme={{
-              components: {
-                Segmented: {
-                  itemActiveBg: "#64748B",
-                  itemColor: "#F1F5F9",
-                  itemSelectedBg: "#F1F5F9",
-                  itemSelectedColor: "#1E293B",
-                  trackBg: "#475569",
-                },
-              },
-            }}
-          >
-            <Segmented<string> options={["Queue", "Recently Played"]} />
-          </ConfigProvider>
+          <Segmented<string> options={["Queue", "Recently Played"]} />
         </div>
 
         {playlists.map((playlist) => (

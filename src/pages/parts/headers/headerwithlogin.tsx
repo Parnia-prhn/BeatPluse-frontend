@@ -1,18 +1,11 @@
-import Image from "next/image";
-import head from "next/head";
-import { AiFillHome } from "react-icons/ai";
-import { FaSearch } from "react-icons/fa";
-import { SiBigbluebutton } from "react-icons/si";
-import { Card, Space } from "antd";
-import { MdLibraryMusic } from "react-icons/md";
-import { FaPlus } from "react-icons/fa";
-import { Button, ConfigProvider, Flex } from "antd";
+import React from "react";
+import { Space, Avatar, Button } from "antd";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
-export default function Headerwithoutlogin() {
+import { IoIosNotifications } from "react-icons/io";
+import { FaUser } from "react-icons/fa";
+export default function Headerwithlogin() {
   return (
-    // <main className="flex min-h-screen flex-col items-center justify-between p-24">
-    // <div className="flex flex-col bg-slate-100 rounded-lg p-6 mt-4 ml-3 w-40 dark:bg-slate-800 ">
     <header>
       <div className="bg-slate-300 rounded-lg  box-content  w-auto p-3 m-5 dark:bg-slate-800 ">
         <div className="flex flex-row justify-items-center">
@@ -27,16 +20,23 @@ export default function Headerwithoutlogin() {
         <div className="flex flex-row justify-items-end justify-end">
           <div className="flex flex-row justify-items-end justify-end">
             <div>
-              <Button shape="round">signup</Button>
+              <Button shape="round" className="m-2">
+                Explore premium
+              </Button>
             </div>
             <div>
-              <Button shape="round">login</Button>
+              <Button
+                shape="circle"
+                className="m-2"
+                icon={<IoIosNotifications />}
+              />
+            </div>
+            <div>
+              <Avatar className="m-2" icon={<FaUser />} />
             </div>
           </div>
         </div>
       </div>
     </header>
-    // </div>
-    // </main>
   );
 }

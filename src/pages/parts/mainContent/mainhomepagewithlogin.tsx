@@ -1,14 +1,6 @@
-import Image from "next/image";
-import head from "next/head";
-import { AiFillHome } from "react-icons/ai";
-import { FaSearch } from "react-icons/fa";
-import { SiBigbluebutton } from "react-icons/si";
-import { Card, Avatar, Space } from "antd";
+import React, { useState } from "react";
+import { Card, Avatar, Space, Button, Segmented } from "antd";
 
-import { Button, ConfigProvider, Flex } from "antd";
-import { IoIosArrowBack } from "react-icons/io";
-import { IoIosArrowForward } from "react-icons/io";
-import image from "../src/assets/pictures/book4.jpg";
 const { Meta } = Card;
 const artists = [
   {
@@ -132,11 +124,31 @@ const playlists = [
     image: "https://i.scdn.co/image/ab67616d0000b273caa64494cc66af431a9fcc8a",
   },
 ];
-export default function Mainhomepagewithoutlogin() {
+export default function Mainhomepagewithlogin() {
   return (
     <div className="">
+      <div className="flex justify-start m-1">
+        <Segmented<string> options={["Albums", "Artists", "Playlists"]} />
+      </div>
+      <div className="flex flex-row">
+        {playlists.map((playlist) => (
+          <div
+            className="flex flex-row m-3 w-1/3 p-2 bg-slate-300 rounded-lg dark:bg-slate-700"
+            key={playlist.id}
+          >
+            <div>
+              <img src={playlist.image} className="w-10" />
+            </div>
+            <div className="flex flex-col">
+              <div className="ml-2">{playlist.name}</div>
+
+              <p className="text-sm ml-2">.playlist</p>
+            </div>
+          </div>
+        ))}
+      </div>
       <Space direction="horizontal" className="">
-        <div className="  p-3 m-3 justify-self-end">Popular artists</div>
+        <div className="  p-3 m-3 justify-self-end">artists</div>
         <div className=" p-3 m-3 justify-self-end place-items-end justify-items-end align-items-end">
           <Button
             className="justify-self-end place-self-end align-end"
@@ -171,7 +183,7 @@ export default function Mainhomepagewithoutlogin() {
         </Space>
       </div>
       <Space direction="horizontal" className="flex-row">
-        <div className=" p-3 m-3 justify-self-end">Popular albums</div>
+        <div className=" p-3 m-3 justify-self-end">albums</div>
         <div className=" p-3 m-3 justify-self-end">
           <Button type="text">show all</Button>
         </div>
@@ -192,7 +204,6 @@ export default function Mainhomepagewithoutlogin() {
                 />
               }
             >
-              {/* <Meta title="alan walker" description="artist" /> */}
               <p>
                 <b>{album.name}</b>
               </p>
@@ -202,7 +213,7 @@ export default function Mainhomepagewithoutlogin() {
         </Space>
       </div>
       <Space direction="horizontal" className="flex-row">
-        <div className="  p-3 m-3 justify-self-end">Popular radio</div>
+        <div className="  p-3 m-3 justify-self-end">radio</div>
         <div className=" p-3 m-3 justify-self-end">
           <Button type="text">show all</Button>
         </div>
@@ -223,7 +234,6 @@ export default function Mainhomepagewithoutlogin() {
                 />
               }
             >
-              {/* <Meta title="alan walker" description="artist" /> */}
               <p>
                 <b>{radio.name}</b>
               </p>
@@ -232,7 +242,7 @@ export default function Mainhomepagewithoutlogin() {
         </Space>
       </div>
       <Space direction="horizontal" className="flex-row">
-        <div className=" p-3 m-3 justify-self-end">BEATplus playlists</div>
+        <div className=" p-3 m-3 justify-self-end">playlists</div>
         <div className=" p-3 m-3 justify-self-end">
           <Button type="text">show all</Button>
         </div>
@@ -253,7 +263,6 @@ export default function Mainhomepagewithoutlogin() {
                 />
               }
             >
-              {/* <Meta title="alan walker" description="artist" /> */}
               <p>
                 <b>{playlist.name}</b>
               </p>

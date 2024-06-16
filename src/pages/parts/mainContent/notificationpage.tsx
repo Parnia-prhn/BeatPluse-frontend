@@ -1,15 +1,5 @@
-import Image from "next/image";
-import head from "next/head";
-import { AiFillHome } from "react-icons/ai";
-import { FaSearch } from "react-icons/fa";
-import { SiBigbluebutton } from "react-icons/si";
-import { Card, Avatar, Space } from "antd";
-
-import { Button, ConfigProvider, Segmented, Flex } from "antd";
-import { IoIosArrowBack } from "react-icons/io";
-import { IoIosArrowForward } from "react-icons/io";
-import image from "../src/assets/pictures/book4.jpg";
-import { GoKebabHorizontal } from "react-icons/go";
+import React, { useState } from "react";
+import { Button, Segmented } from "antd";
 import { FaPlay } from "react-icons/fa";
 
 const albums = [
@@ -54,21 +44,7 @@ export default function NotificationPage() {
         </p>
         <p> the latest releases </p>
         <div className="flex justify-start m-3">
-          <ConfigProvider
-            theme={{
-              components: {
-                Segmented: {
-                  itemActiveBg: "#64748B",
-                  itemColor: "#F1F5F9",
-                  itemSelectedBg: "#F1F5F9",
-                  itemSelectedColor: "#1E293B",
-                  trackBg: "#475569",
-                },
-              },
-            }}
-          >
-            <Segmented<string> options={["Music", "Podcasts"]} />
-          </ConfigProvider>
+          <Segmented<string> options={["Music", "Podcasts"]} />
         </div>
         <p>
           <b>New</b>
@@ -88,28 +64,11 @@ export default function NotificationPage() {
               </div>
               <div className="m-2">description</div>
               <div className="m-2">
-                <ConfigProvider
-                  theme={{
-                    components: {
-                      Button: {
-                        defaultBg: "#1E293B",
-                        defaultActiveColor: "#F1F5F9",
-                        defaultActiveBg: "#F1F5F9",
-                        defaultBorderColor: "#F8FAFC",
-                        defaultColor: "#F1F5F9",
-                        defaultHoverBg: "#881337",
-                        defaultHoverBorderColor: "#F8FAFC",
-                        defaultHoverColor: "#F1F5F9",
-                      },
-                    },
-                  }}
-                >
-                  <Button
-                    shape="circle"
-                    className="m-2 text-end"
-                    icon={<FaPlay />}
-                  />
-                </ConfigProvider>
+                <Button
+                  shape="circle"
+                  className="m-2 text-end"
+                  icon={<FaPlay />}
+                />
               </div>
             </div>
           ))}

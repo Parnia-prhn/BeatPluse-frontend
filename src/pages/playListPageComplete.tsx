@@ -1,10 +1,10 @@
 "use client";
-import React, { useState } from "react";
-import Headerwithlogin from "./parts/headerwithlogin";
-import LeftSideBarWithLogin from "./parts/leftsidebarwithlogin";
-import TopSideBar from "./parts/topsidebar";
-import PlayListPage from "./parts/playlistpage";
-import { Breadcrumb, Layout, ConfigProvider, Menu, theme, Table } from "antd";
+import React from "react";
+import Headerwithlogin from "./parts/headers/headerwithlogin";
+import LeftSideBarWithLogin from "./parts/sidebars/leftsidebarwithlogin";
+import TopSideBar from "./parts/sidebars/topsidebar";
+import PlayListPage from "./parts/mainContent/playlistpage";
+import { Layout, ConfigProvider } from "antd";
 import Theme from "../../themeConfig";
 const { Header, Content, Footer, Sider } = Layout;
 export default function PlayListPageComplete() {

@@ -1,12 +1,5 @@
 import * as React from "react";
-import { AiFillHome } from "react-icons/ai";
-import { FaSearch } from "react-icons/fa";
-import { SiBigbluebutton } from "react-icons/si";
-import { Card, Space, Segmented } from "antd";
-import { MdLibraryMusic } from "react-icons/md";
-import { FaPlus } from "react-icons/fa";
-import { Button, ConfigProvider, Flex } from "antd";
-import { IoFilter } from "react-icons/io5";
+
 const playlists = [
   {
     id: 1,

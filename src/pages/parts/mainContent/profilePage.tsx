@@ -1,16 +1,6 @@
-import Image from "next/image";
-import head from "next/head";
-import { AiFillHome } from "react-icons/ai";
-import { FaSearch } from "react-icons/fa";
-import { SiBigbluebutton } from "react-icons/si";
+import React, { useState } from "react";
 import { Card, Avatar, Space } from "antd";
-
-import { Button, ConfigProvider, Segmented, Flex } from "antd";
-import { IoIosArrowBack } from "react-icons/io";
-import { IoIosArrowForward } from "react-icons/io";
-import image from "../src/assets/pictures/book4.jpg";
 import { GoKebabHorizontal } from "react-icons/go";
-import { FaPlay } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 const artists = [
   {
@@ -136,7 +126,6 @@ export default function NotificationPage() {
                   />
                 }
               >
-                {/* <Meta title="alan walker" description="artist" /> */}
                 <p>
                   <b>{album.name}</b>
                 </p>

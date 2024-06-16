@@ -1,16 +1,6 @@
-import Image from "next/image";
-import head from "next/head";
-import { AiFillHome } from "react-icons/ai";
-import { FaSearch } from "react-icons/fa";
-import { SiBigbluebutton } from "react-icons/si";
-import { Card, Avatar, Space } from "antd";
+import React from "react";
+import { Card, Avatar, Space, Button } from "antd";
 
-import { Button, ConfigProvider, Flex } from "antd";
-import { IoIosArrowBack } from "react-icons/io";
-import { IoIosArrowForward } from "react-icons/io";
-import image from "../src/assets/pictures/book4.jpg";
-import { GoKebabHorizontal } from "react-icons/go";
-import { FaPlay } from "react-icons/fa";
 const { Meta } = Card;
 const artists = [
   {
@@ -134,80 +124,9 @@ const playlists = [
     image: "https://i.scdn.co/image/ab67616d0000b273caa64494cc66af431a9fcc8a",
   },
 ];
-export default function ArtistPage() {
+export default function Mainhomepagewithoutlogin() {
   return (
     <div className="">
-      <img
-        src="https://www.festivalsunited.com/images/artists/alan-walker-46b95031dacb8da.jpg"
-        className="w-full h-1/4"
-      />
-      <div>
-        <b>Alan walker</b>
-        <p>30000000 monthly listener</p>
-      </div>
-      <div className="flex flex-row">
-        <ConfigProvider
-          theme={{
-            components: {
-              Button: {
-                defaultBg: "#1E293B",
-                defaultActiveColor: "#F1F5F9",
-                defaultActiveBg: "#F1F5F9",
-                defaultBorderColor: "#F8FAFC",
-                defaultColor: "#F1F5F9",
-                defaultHoverBg: "#881337",
-                defaultHoverBorderColor: "#F8FAFC",
-                defaultHoverColor: "#F1F5F9",
-              },
-            },
-          }}
-        >
-          <Button shape="circle" className="m-2" icon={<FaPlay />} />
-        </ConfigProvider>
-        <ConfigProvider
-          theme={{
-            components: {
-              Button: {
-                defaultBg: "#1E293B",
-                defaultActiveColor: "#F1F5F9",
-                defaultActiveBg: "#F1F5F9",
-                defaultBorderColor: "#F8FAFC",
-                defaultColor: "#F1F5F9",
-                defaultHoverBg: "#881337",
-                defaultHoverBorderColor: "#F8FAFC",
-                defaultHoverColor: "#F1F5F9",
-              },
-            },
-          }}
-        >
-          <Button shape="round" className="m-2">
-            follow
-          </Button>
-        </ConfigProvider>
-        <div>
-          <GoKebabHorizontal className="mt-3" />
-        </div>
-      </div>
-      <div>
-        <b>popular</b>
-      </div>
-      <div className="flex flex-col">
-        {playlists.map((playlist) => (
-          <div
-            className="flex flex-row m-3 w-1/1 p-2 bg-slate-300 rounded-lg dark:bg-slate-700"
-            key={playlist.id}
-          >
-            <div>
-              <img src={playlist.image} className="w-10" />
-            </div>
-            <div className="flex flex-col">
-              <div className="ml-2">{playlist.name}</div>
-            </div>
-            <div className="flex justify-center items-center">1000000 </div>
-            <div className="flex justify-end items-end">3:10</div>
-          </div>
-        ))}
-      </div>
       <Space direction="horizontal" className="">
         <div className="  p-3 m-3 justify-self-end">Popular artists</div>
         <div className=" p-3 m-3 justify-self-end place-items-end justify-items-end align-items-end">
@@ -265,7 +184,6 @@ export default function ArtistPage() {
                 />
               }
             >
-              {/* <Meta title="alan walker" description="artist" /> */}
               <p>
                 <b>{album.name}</b>
               </p>
@@ -296,7 +214,6 @@ export default function ArtistPage() {
                 />
               }
             >
-              {/* <Meta title="alan walker" description="artist" /> */}
               <p>
                 <b>{radio.name}</b>
               </p>
@@ -326,7 +243,6 @@ export default function ArtistPage() {
                 />
               }
             >
-              {/* <Meta title="alan walker" description="artist" /> */}
               <p>
                 <b>{playlist.name}</b>
               </p>

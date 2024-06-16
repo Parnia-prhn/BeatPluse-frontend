@@ -1,23 +1,5 @@
-import React, { useState } from "react";
-import Image from "next/image";
-import head from "next/head";
-import { AiFillHome } from "react-icons/ai";
-import { FaSearch } from "react-icons/fa";
-import { SiBigbluebutton } from "react-icons/si";
-import { Card, Avatar, Space } from "antd";
-import { MdLibraryMusic } from "react-icons/md";
-import { FaPlus } from "react-icons/fa";
-import { Button, ConfigProvider, Flex } from "antd";
-import { IoIosArrowBack } from "react-icons/io";
-import { IoIosArrowForward } from "react-icons/io";
-import { Input } from "antd";
-import image from "../src/assets/pictures/book4.jpg";
-import type { MenuProps } from "antd";
-import { Breadcrumb, Layout, Menu, theme } from "antd";
-import Headerw from "@/src/pages/parts/headerwithoutlogin";
-import TopSideBar from "@/src/pages/parts/topsidebar";
-import Mainhomepagewithoutlogin from "@/src/pages/parts/mainhomepagewithoutlogin";
-import { Segmented } from "antd";
+import React from "react";
+import { Card, Avatar, Space, Button, Segmented } from "antd";
 const songs = [
   {
     id: 1,
@@ -124,23 +106,9 @@ export default function SearchResult() {
     <div>
       <div>
         <div className="flex justify-center m-3">
-          <ConfigProvider
-            theme={{
-              components: {
-                Segmented: {
-                  itemActiveBg: "#64748B",
-                  itemColor: "#F1F5F9",
-                  itemSelectedBg: "#F1F5F9",
-                  itemSelectedColor: "#1E293B",
-                  trackBg: "#475569",
-                },
-              },
-            }}
-          >
-            <Segmented<string>
-              options={["All", "Songs", "Artists", "Playlists", "Podcasts"]}
-            />
-          </ConfigProvider>
+          <Segmented<string>
+            options={["All", "Songs", "Artists", "Playlists", "Podcasts"]}
+          />
         </div>
         <div className="flex flex-row">
           <div className="flex flex-col justify-start rounded-lg w-1/2 h-50 m-5 bg-slate-300 dark:bg-slate-600">
@@ -195,7 +163,6 @@ export default function SearchResult() {
                   />
                 }
               >
-                {/* <Meta title="alan walker" description="artist" /> */}
                 <p>
                   <b>{playlist.name}</b>
                 </p>
@@ -225,7 +192,6 @@ export default function SearchResult() {
                   />
                 }
               >
-                {/* <Meta title="alan walker" description="artist" /> */}
                 <p>
                   <b>{album.name}</b>
                 </p>

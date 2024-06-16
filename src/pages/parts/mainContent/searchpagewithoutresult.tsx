@@ -1,14 +1,5 @@
-import Image from "next/image";
-import head from "next/head";
-import { AiFillHome } from "react-icons/ai";
-import { FaSearch } from "react-icons/fa";
-import { SiBigbluebutton } from "react-icons/si";
-import { Card, Avatar, Space } from "antd";
-
-import { Button, ConfigProvider, Flex } from "antd";
-import { IoIosArrowBack } from "react-icons/io";
-import { IoIosArrowForward } from "react-icons/io";
-import image from "../src/assets/pictures/book4.jpg";
+import React from "react";
+import { Space } from "antd";
 
 const genres = [
   { id: 1, name: "Podcasts" },

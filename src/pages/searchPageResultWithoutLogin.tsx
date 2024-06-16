@@ -1,10 +1,9 @@
-"use client";
-import React, { useState } from "react";
-import HeaderSearch from "./parts/headersearch";
-import LeftSideBar from "./parts/leftsidebar";
-import TopSideBar from "./parts/topsidebar";
-import SearchResult from "./parts/searchresult";
-import { Breadcrumb, Layout, Menu, theme, Table, ConfigProvider } from "antd";
+import React from "react";
+import HeaderSearch from "./parts/headers/headersearch";
+import LeftSideBar from "./parts/sidebars/leftsidebar";
+import TopSideBar from "./parts/sidebars/topsidebar";
+import SearchResult from "./parts/mainContent/searchresult";
+import { Layout, ConfigProvider } from "antd";
 import Theme from "../../themeConfig";
 
 const { Header, Content, Footer, Sider } = Layout;

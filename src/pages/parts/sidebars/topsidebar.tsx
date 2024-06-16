@@ -1,9 +1,9 @@
 import * as React from "react";
-import { useState, useRef, MouseEvent } from "react";
+import { useState, useRef } from "react";
 import { AiFillHome } from "react-icons/ai";
 import { FaSearch } from "react-icons/fa";
 import { SiBigbluebutton } from "react-icons/si";
-import { Card, Space, theme } from "antd";
+import { Space, theme } from "antd";
 
 export default function TopSideBar() {
   const [collapsed, setCollapsed] = useState(false);
@@ -36,7 +36,6 @@ export default function TopSideBar() {
   };
 
   return (
-    // <div className="flex flex-col bg-slate-100 rounded-lg p-6 mt-4 ml-3 w-40 dark:bg-slate-800 ">
     <div
       ref={sidebarRef}
       className="h-screen transition-width duration-150 ease-in-out"
@@ -73,6 +72,5 @@ export default function TopSideBar() {
         onMouseDown={handleMouseDown}
       />
     </div>
-    // </div>
   );
 }
