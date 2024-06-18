@@ -16,7 +16,7 @@ const genres = [
 export default function Searchpagewithoutresult() {
   return (
     <div>
-      <div className="flex flex-row justify-between  pl-12">
+      <div className="flex flex-row justify-between  pl-12 m-4 p-3">
         <Space direction="horizontal" wrap className="">
           {genres.map((genre) => (
             <div

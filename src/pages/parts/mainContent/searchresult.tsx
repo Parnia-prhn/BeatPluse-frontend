@@ -105,7 +105,7 @@ export default function SearchResult() {
   return (
     <div>
       <div>
-        <div className="flex justify-center m-3">
+        <div className="flex justify-center m-4 p-3">
           <Segmented<string>
             options={["All", "Songs", "Artists", "Playlists", "Podcasts"]}
           />

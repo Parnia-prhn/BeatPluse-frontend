@@ -4,7 +4,10 @@ import { Card, Table, TableProps } from "antd";
 import { MdOutlineDownloadForOffline } from "react-icons/md";
 import { FaUserPlus } from "react-icons/fa6";
 import { TfiMenuAlt } from "react-icons/tfi";
-
+import { FaUser } from "react-icons/fa";
+import { GoKebabHorizontal } from "react-icons/go";
+import { FaShuffle } from "react-icons/fa6";
+import { FaPlay } from "react-icons/fa";
 const { Meta } = Card;
 interface DataType {
   key: string;

@@ -12,18 +12,18 @@ export default function NotificationPageComplete() {
     <div>
       <ConfigProvider theme={Theme}>
         <Layout>
-          <Header style={{ display: "flex", alignItems: "center" }}>
-            <Headerwithlogin />
-          </Header>
+          <Sider width={300} style={{ position: "fixed", overflow: "auto" }}>
+            <TopSideBar />
+            <LeftSideBarWithLogin />
+          </Sider>
 
-          <Layout>
-            <Sider width={300}>
-              <TopSideBar />
-              <LeftSideBarWithLogin />
-            </Sider>
-            <Layout style={{ padding: "0 24px 24px" }}>
+          <Layout style={{ marginLeft: 250, overflow: "initial" }}>
+            <Header style={{ display: "", alignItems: "center" }}>
+              <Headerwithlogin />
+            </Header>
+            <Content style={{ padding: "24px 24px 24px" }}>
               <NotificationPage />
-            </Layout>
+            </Content>
           </Layout>
         </Layout>
       </ConfigProvider>

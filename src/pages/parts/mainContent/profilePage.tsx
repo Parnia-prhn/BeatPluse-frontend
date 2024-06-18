@@ -25,11 +25,6 @@ const artists = [
     name: "Punch",
     image: "https://i.scdn.co/image/ab67616100005174065608c797a38d142082fc8a",
   },
-  {
-    id: 5,
-    name: "Taylor Swift",
-    image: "https://i.scdn.co/image/ab67616d00001e02318443aab3531a0558e79a4d",
-  },
 ];
 const albums = [
   {
@@ -56,12 +51,6 @@ const albums = [
     name: "world of walker",
     artist: "Alan Walker",
     image: "https://i.scdn.co/image/ab67616d00001e02df9a35baaa98675256b35177",
-  },
-  {
-    id: 5,
-    name: "who i am",
-    artist: "Alan walker",
-    image: "https://i.scdn.co/image/ab67616d0000b273dc3d61d589160ff29b775bc9",
   },
 ];
 export default function NotificationPage() {
