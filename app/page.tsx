@@ -1,7 +1,14 @@
 "use client";
 import React, { useState } from "react";
 import { Breadcrumb, Layout, Menu, theme, Table } from "antd";
-
+import MusicPlayer from "@/src/pages/parts/sidebars/musicPlayer";
+import SearchPageWithoutLogin from "@/src/pages/searchPageWithoutLogin";
+import SearchPageResultWithoutLogin from "@/src/pages/searchPageResultWithoutLogin";
+import HomePageWithoutLogin from "@/src/pages/homePageWithoutLogin";
+import HomePageWithLogin from "@/src/pages/homePageWithLogin";
+import LoginPage from "@/src/pages/loginpage";
+import SignupPage from "@/src/pages/signuppage";
+import ArtistPageComplete from "@/src/pages/artistPageComplete";
 const { Header, Content, Footer, Sider } = Layout;
 // const items1: any["items"] = ["1", "2", "3"].map(key => ({
 //       key,
@@ -47,8 +54,14 @@ export default function Home() {
       {/* <LeftSideBar /> */}
       {/* <Mainhomepagewithoutlogin /> */}
       {/*---------------------------------------------------------------------*/}
+      {/* <SearchPageResultWithoutLogin /> */}
+      {/* <SearchPageWithoutLogin /> */}
       {/* <HomePageWithoutLogin /> */}
-
+      {/* <HomePageWithLogin /> */}
+      {/* <LoginPage /> */}
+      {/* <SignupPage /> */}
+      <ArtistPageComplete />
+      {/* <MusicPlayer /> */}
       {/* <div>
         <header>
           <Headerw />

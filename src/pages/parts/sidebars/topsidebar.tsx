@@ -38,7 +38,7 @@ export default function TopSideBar() {
   return (
     <div
       ref={sidebarRef}
-      className="h-screen transition-width duration-150 ease-in-out"
+      className="transition-width duration-150 ease-in-out"
       style={{ width: `${width}px` }}
     >
       <Space

@@ -11,18 +11,18 @@ export default function HomePageWithoutLogin() {
     <div>
       <ConfigProvider theme={Theme}>
         <Layout>
-          <Header style={{ display: "flex", alignItems: "center" }}>
-            <Headerwithoutlogin />
-          </Header>
+          <Sider width={300} style={{ position: "fixed", overflow: "auto" }}>
+            <TopSideBar />
+            <LeftSideBar />
+          </Sider>
 
-          <Layout>
-            <Sider width={300}>
-              <TopSideBar />
-              <LeftSideBar />
-            </Sider>
-            <Layout style={{ padding: "0 24px 24px" }}>
+          <Layout style={{ marginLeft: 250, overflow: "initial" }}>
+            <Header style={{ display: "", alignItems: "center" }}>
+              <Headerwithoutlogin />
+            </Header>
+            <Content style={{ padding: "24px 24px 24px" }}>
               <Mainhomepagewithoutlogin />
-            </Layout>
+            </Content>
           </Layout>
         </Layout>
       </ConfigProvider>

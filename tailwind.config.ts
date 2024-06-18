@@ -2,7 +2,12 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/parts/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/parts/headers/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/parts/mainContent/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/parts/modals/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/parts/sidebars/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],

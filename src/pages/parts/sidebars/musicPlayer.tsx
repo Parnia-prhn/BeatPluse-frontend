@@ -7,13 +7,15 @@ import { FaBackwardStep } from "react-icons/fa6";
 import { ImNext2 } from "react-icons/im";
 import { TfiLoop } from "react-icons/tfi";
 import type { InputNumberProps } from "antd";
-import { Col, InputNumber, Row, Slider } from "antd";
+import { Col, InputNumber, Row, Slider, Drawer } from "antd";
 import { AiOutlinePlaySquare } from "react-icons/ai";
 import { LuMic2 } from "react-icons/lu";
 import { TiThMenu } from "react-icons/ti";
 import { FaComputer } from "react-icons/fa6";
 import { RxSpeakerLoud } from "react-icons/rx";
 import { AiOutlineFullscreen } from "react-icons/ai";
+import RightSideBarQueue from "./rightsidebarQueue";
+import RightSideBarSongInformation from "./rightsidebarSongInformation";
 export default function MusicPlayer() {
   const [inputValue, setInputValue] = useState(0);
 
@@ -31,6 +33,24 @@ export default function MusicPlayer() {
     }
     setInputValue2(value as number);
   };
+  const [open, setOpen] = useState(false);
+
+  const showDrawer = () => {
+    setOpen(true);
+  };
+
+  const onClose = () => {
+    setOpen(false);
+  };
+  const [openInfo, setOpenInfo] = useState(false);
+
+  const showDrawerInfo = () => {
+    setOpenInfo(true);
+  };
+
+  const onCloseInfo = () => {
+    setOpenInfo(false);
+  };
   return (
     <div className="w-full bg-slate-300 dark:bg-slate-900 rounded-lg">
       <div className="flex flex-row m-3 p-3 ">
@@ -38,6 +58,7 @@ export default function MusicPlayer() {
           <img
             src="https://i.scdn.co/image/ab67616d0000b273dc3d61d589160ff29b775bc9"
             className="size-11 m-3"
+            onClick={showDrawer}
           />
           <div className="flex flex-col">
             <p className="p-2">
@@ -80,7 +101,7 @@ export default function MusicPlayer() {
         <div className="flex flex-row p-3 m-3 basis-1/4 justify-end">
           <AiOutlinePlaySquare className="m-2" />
           <LuMic2 className="m-2" />
-          <TiThMenu className="m-2" />
+          <TiThMenu className="m-2" onClick={showDrawer} />
           <FaComputer className="m-2" />
           <RxSpeakerLoud className="m-2" />
           <Col span={2}>
@@ -95,6 +116,12 @@ export default function MusicPlayer() {
           <AiOutlineFullscreen className="m-2" />
         </div>
       </div>
+      <Drawer title="songs queue" onClose={onClose} open={open}>
+        <RightSideBarQueue />
+      </Drawer>
+      <Drawer title="songs Information" onClose={onCloseInfo} open={openInfo}>
+        <RightSideBarSongInformation />
+      </Drawer>
     </div>
   );
 }

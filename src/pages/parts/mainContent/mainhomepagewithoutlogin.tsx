@@ -25,11 +25,6 @@ const artists = [
     name: "Punch",
     image: "https://i.scdn.co/image/ab67616100005174065608c797a38d142082fc8a",
   },
-  {
-    id: 5,
-    name: "Taylor Swift",
-    image: "https://i.scdn.co/image/ab67616d00001e02318443aab3531a0558e79a4d",
-  },
 ];
 const albums = [
   {
@@ -57,12 +52,6 @@ const albums = [
     artist: "Alan Walker",
     image: "https://i.scdn.co/image/ab67616d00001e02df9a35baaa98675256b35177",
   },
-  {
-    id: 5,
-    name: "who i am",
-    artist: "Alan walker",
-    image: "https://i.scdn.co/image/ab67616d0000b273dc3d61d589160ff29b775bc9",
-  },
 ];
 const radio = [
   {
@@ -89,12 +78,6 @@ const radio = [
     image:
       "https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/0YC192cP3KPCRWx8zr8MfZ/de",
   },
-  {
-    id: 5,
-    name: "Taylor Swift",
-    image:
-      "https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/06HL4z0CvFAxyc27GXpf02/de",
-  },
 ];
 const playlists = [
   {
@@ -117,11 +100,6 @@ const playlists = [
     id: 4,
     name: "sad songs",
     image: "https://i.scdn.co/image/ab67706f00000002583117b5f326c5759bcd4628",
-  },
-  {
-    id: 5,
-    name: "night pop",
-    image: "https://i.scdn.co/image/ab67616d0000b273caa64494cc66af431a9fcc8a",
   },
 ];
 export default function Mainhomepagewithoutlogin() {

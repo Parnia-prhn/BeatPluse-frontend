@@ -5,12 +5,6 @@ import { FaPlay } from "react-icons/fa";
 const { Meta } = Card;
 const artists = [
   {
-    id: 1,
-    name: "Alan Walker",
-    image:
-      "https://billgrahamcivic.com/wp-content/uploads/2022/05/AlanWalker_1024-2.jpg",
-  },
-  {
     id: 2,
     name: "Hans Zimmer",
     image: "https://i.scdn.co/image/ab6761610000e5eb371632043a8c12bb7eeeaf9d",
@@ -58,12 +52,6 @@ const albums = [
     artist: "Alan Walker",
     image: "https://i.scdn.co/image/ab67616d00001e02df9a35baaa98675256b35177",
   },
-  {
-    id: 5,
-    name: "who i am",
-    artist: "Alan walker",
-    image: "https://i.scdn.co/image/ab67616d0000b273dc3d61d589160ff29b775bc9",
-  },
 ];
 const radio = [
   {
@@ -90,12 +78,6 @@ const radio = [
     image:
       "https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/0YC192cP3KPCRWx8zr8MfZ/de",
   },
-  {
-    id: 5,
-    name: "Taylor Swift",
-    image:
-      "https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/06HL4z0CvFAxyc27GXpf02/de",
-  },
 ];
 const playlists = [
   {
@@ -119,24 +101,19 @@ const playlists = [
     name: "sad songs",
     image: "https://i.scdn.co/image/ab67706f00000002583117b5f326c5759bcd4628",
   },
-  {
-    id: 5,
-    name: "night pop",
-    image: "https://i.scdn.co/image/ab67616d0000b273caa64494cc66af431a9fcc8a",
-  },
 ];
 export default function ArtistPage() {
   return (
     <div className="">
       <img
         src="https://www.festivalsunited.com/images/artists/alan-walker-46b95031dacb8da.jpg"
-        className="w-full h-1/4"
+        className="w-full h-1/4 p-3 m-4 rounded-lg"
       />
-      <div>
+      <div className="p-3 m-4">
         <b>Alan walker</b>
         <p>30000000 monthly listener</p>
       </div>
-      <div className="flex flex-row">
+      <div className="flex flex-row p-3 m-4">
         <Button shape="circle" className="m-2" icon={<FaPlay />} />
 
         <Button shape="round" className="m-2">
@@ -147,7 +124,7 @@ export default function ArtistPage() {
           <GoKebabHorizontal className="mt-3" />
         </div>
       </div>
-      <div>
+      <div className="p-3 m-4">
         <b>popular</b>
       </div>
       <div className="flex flex-col">
@@ -161,14 +138,15 @@ export default function ArtistPage() {
             </div>
             <div className="flex flex-col">
               <div className="ml-2">{playlist.name}</div>
+
+              <div className="flex ml-2">1000000 </div>
+              <div className="flex ml-2">3:10</div>
             </div>
-            <div className="flex justify-center items-center">1000000 </div>
-            <div className="flex justify-end items-end">3:10</div>
           </div>
         ))}
       </div>
       <Space direction="horizontal" className="">
-        <div className="  p-3 m-3 justify-self-end">Popular artists</div>
+        <div className="  p-3 m-3 justify-self-end">Related artists</div>
         <div className=" p-3 m-3 justify-self-end place-items-end justify-items-end align-items-end">
           <Button
             className="justify-self-end place-self-end align-end"
@@ -203,7 +181,7 @@ export default function ArtistPage() {
         </Space>
       </div>
       <Space direction="horizontal" className="flex-row">
-        <div className=" p-3 m-3 justify-self-end">Popular albums</div>
+        <div className=" p-3 m-3 justify-self-end">Related albums</div>
         <div className=" p-3 m-3 justify-self-end">
           <Button type="text">show all</Button>
         </div>
@@ -233,7 +211,7 @@ export default function ArtistPage() {
         </Space>
       </div>
       <Space direction="horizontal" className="flex-row">
-        <div className="  p-3 m-3 justify-self-end">Popular radio</div>
+        <div className="  p-3 m-3 justify-self-end">Related radio</div>
         <div className=" p-3 m-3 justify-self-end">
           <Button type="text">show all</Button>
         </div>
@@ -262,7 +240,7 @@ export default function ArtistPage() {
         </Space>
       </div>
       <Space direction="horizontal" className="flex-row">
-        <div className=" p-3 m-3 justify-self-end">BEATplus playlists</div>
+        <div className=" p-3 m-3 justify-self-end">Related playlists</div>
         <div className=" p-3 m-3 justify-self-end">
           <Button type="text">show all</Button>
         </div>

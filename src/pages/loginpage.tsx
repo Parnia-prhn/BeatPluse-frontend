@@ -6,7 +6,7 @@ import { FaGoogle } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaApple } from "react-icons/fa";
 
-export default function Signuppage() {
+export default function LoginPage() {
   return (
     <div>
       <ConfigProvider theme={Theme}>

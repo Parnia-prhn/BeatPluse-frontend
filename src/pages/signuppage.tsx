@@ -6,7 +6,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaApple } from "react-icons/fa";
 import Theme from "../../themeConfig";
 
-export default function Signuppage() {
+export default function SignupPage() {
   return (
     <div>
       <ConfigProvider theme={Theme}>
