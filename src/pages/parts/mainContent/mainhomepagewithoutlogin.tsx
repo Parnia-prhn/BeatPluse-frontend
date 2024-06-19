@@ -1,5 +1,7 @@
 import React from "react";
+import Link from "next/link";
 import { Card, Avatar, Space, Button } from "antd";
+import ArtistPageComplete from "../../artistPageComplete";
 
 const { Meta } = Card;
 const artists = [
@@ -120,23 +122,25 @@ export default function Mainhomepagewithoutlogin() {
       <div className="flex flex-row justify-between  pl-12">
         <Space direction="horizontal" className="">
           {artists.map((artist) => (
-            <Card
-              key={artist.id}
-              className="bg-transparent border-transparent"
-              hoverable
-              style={{ width: 240, height: 320 }}
-              cover={
-                <Avatar
-                  size={238}
-                  src={<img src={artist.image} alt="avatar" />}
-                />
-              }
-            >
-              <p>
-                <b>{artist.name}</b>
-              </p>
-              <p>artist</p>
-            </Card>
+            <Link href="src/pages/artistPageComplete">
+              <Card
+                key={artist.id}
+                className="bg-transparent border-transparent"
+                hoverable
+                style={{ width: 240, height: 320 }}
+                cover={
+                  <Avatar
+                    size={238}
+                    src={<img src={artist.image} alt="avatar" />}
+                  />
+                }
+              >
+                <p>
+                  <b>{artist.name}</b>
+                </p>
+                <p>artist</p>
+              </Card>
+            </Link>
           ))}
         </Space>
       </div>

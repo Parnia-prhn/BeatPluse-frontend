@@ -14,5 +14,11 @@ import PlayListPageComplete from "@/src/pages/playListPageComplete";
 import ProfilePageComplete from "@/src/pages/profilePageComplete";
 
 export default function Home() {
-  return <div></div>;
+  return (
+    <div>
+      <div>
+        <HomePageWithoutLogin />
+      </div>
+    </div>
+  );
 }

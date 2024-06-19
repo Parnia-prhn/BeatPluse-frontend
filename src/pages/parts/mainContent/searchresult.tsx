@@ -1,5 +1,6 @@
-import React from "react";
-import { Card, Avatar, Space, Button, Segmented } from "antd";
+import React, { useState } from "react";
+import { Card, Avatar, Space, Button, Segmented, Modal } from "antd";
+import Whenplaysongwithoutlogin from "../modals/whenplaywithoutloginmodal";
 const songs = [
   {
     id: 1,
@@ -102,6 +103,19 @@ const artists = [
   },
 ];
 export default function SearchResult() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
   return (
     <div>
       <div>
@@ -114,12 +128,13 @@ export default function SearchResult() {
           <div className="flex flex-col justify-start rounded-lg w-1/2 h-50 m-5 bg-slate-300 dark:bg-slate-600">
             <img
               src="https://upload.wikimedia.org/wikipedia/en/c/c6/Diamond_Heart_Alan_Walker.jpg"
-              className="flex justify-start rounded-lg w-40 m-5 h-40"
+              className="flex justify-start rounded-lg w-40 m-5 h-40 cursor-pointer"
+              onClick={showModal}
             />
-            <p className="pl-10">
+            <p className="pl-10 cursor-pointer" onClick={showModal}>
               <b>diamond heart</b>
             </p>
-            <p className="pl-10">song . alan walker</p>
+            <p className="pl-10 cursor-pointer">song . alan walker</p>
           </div>
           <div className="flex flex-col justify-end rounded-lg w-1/2 h-50 m-5 bg-slate-300 dark:bg-slate-600">
             <Space direction="vertical" className="m-3">
@@ -127,11 +142,14 @@ export default function SearchResult() {
                 <div key={song.id} className="flex flex-row">
                   <img
                     src={song.image}
-                    className="rounded-lg flex justify-start w-20 h-20 m-3"
+                    className="rounded-lg flex justify-start w-20 h-20 m-3 cursor-pointer"
+                    onClick={showModal}
                   />
                   <div className="flex flex-col m-3">
-                    <p>{song.name}</p>
-                    <p>{song.artist}</p>
+                    <p className="cursor-pointer" onClick={showModal}>
+                      {song.name}
+                    </p>
+                    <p className="cursor-pointer">{song.artist}</p>
                   </div>
                   <p className="flex justify-end place-self-end m-3">
                     {song.time}
@@ -236,6 +254,14 @@ export default function SearchResult() {
           </Space>
         </div>
       </div>
+      <Modal
+        title="song"
+        open={isModalOpen}
+        onOk={handleOk}
+        onCancel={handleCancel}
+      >
+        <Whenplaysongwithoutlogin />
+      </Modal>
     </div>
   );
 }
