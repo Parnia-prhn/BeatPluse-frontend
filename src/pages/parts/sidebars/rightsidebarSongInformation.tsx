@@ -1,3 +1,4 @@
+import Link from "next/link";
 import * as React from "react";
 
 const playlists = [
@@ -44,7 +45,9 @@ export default function RightSideBarSongInformation() {
           className="size-15 m-3"
         />
         <p className=" m-2">
-          <b>Alan Walker</b>
+          <Link href="/artistPage">
+            <b>Alan Walker</b>
+          </Link>
         </p>
       </div>
     </div>

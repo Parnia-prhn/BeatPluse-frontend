@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Card, Avatar, Space } from "antd";
 import { GoKebabHorizontal } from "react-icons/go";
 import { FaUser } from "react-icons/fa";
+import Link from "next/link";
 const artists = [
   {
     id: 1,
@@ -76,23 +77,25 @@ export default function NotificationPage() {
         <div className="flex flex-row justify-between  pl-12 m-4">
           <Space direction="horizontal" className="">
             {artists.map((artist) => (
-              <Card
-                key={artist.id}
-                className="bg-transparent border-transparent"
-                hoverable
-                style={{ width: 240, height: 320 }}
-                cover={
-                  <Avatar
-                    size={238}
-                    src={<img src={artist.image} alt="avatar" />}
-                  />
-                }
-              >
-                <p>
-                  <b>{artist.name}</b>
-                </p>
-                <p>artist</p>
-              </Card>
+              <Link href="/artistPage">
+                <Card
+                  key={artist.id}
+                  className="bg-transparent border-transparent"
+                  hoverable
+                  style={{ width: 240, height: 320 }}
+                  cover={
+                    <Avatar
+                      size={238}
+                      src={<img src={artist.image} alt="avatar" />}
+                    />
+                  }
+                >
+                  <p>
+                    <b>{artist.name}</b>
+                  </p>
+                  <p>artist</p>
+                </Card>
+              </Link>
             ))}
           </Space>
         </div>
@@ -102,24 +105,26 @@ export default function NotificationPage() {
         <div className="flex justify-between  pl-12 m-3">
           <Space direction="horizontal" className="">
             {albums.map((album) => (
-              <Card
-                key={album.id}
-                className="bg-transparent border-transparent"
-                hoverable
-                style={{ width: 240, height: 320 }}
-                cover={
-                  <Avatar
-                    shape="square"
-                    size={238}
-                    src={<img src={album.image} alt="avatar" />}
-                  />
-                }
-              >
-                <p>
-                  <b>{album.name}</b>
-                </p>
-                <p>{album.artist}</p>
-              </Card>
+              <Link href="/playListPage">
+                <Card
+                  key={album.id}
+                  className="bg-transparent border-transparent"
+                  hoverable
+                  style={{ width: 240, height: 320 }}
+                  cover={
+                    <Avatar
+                      shape="square"
+                      size={238}
+                      src={<img src={album.image} alt="avatar" />}
+                    />
+                  }
+                >
+                  <p>
+                    <b>{album.name}</b>
+                  </p>
+                  <p>{album.artist}</p>
+                </Card>
+              </Link>
             ))}
           </Space>
         </div>
@@ -129,23 +134,25 @@ export default function NotificationPage() {
         <div className="flex flex-row justify-between  pl-12 m-3">
           <Space direction="horizontal" className="">
             {artists.map((artist) => (
-              <Card
-                key={artist.id}
-                className="bg-transparent border-transparent"
-                hoverable
-                style={{ width: 240, height: 320 }}
-                cover={
-                  <Avatar
-                    size={238}
-                    src={<img src={artist.image} alt="avatar" />}
-                  />
-                }
-              >
-                <p>
-                  <b>{artist.name}</b>
-                </p>
-                <p>artist</p>
-              </Card>
+              <Link href="/artistPage">
+                <Card
+                  key={artist.id}
+                  className="bg-transparent border-transparent"
+                  hoverable
+                  style={{ width: 240, height: 320 }}
+                  cover={
+                    <Avatar
+                      size={238}
+                      src={<img src={artist.image} alt="avatar" />}
+                    />
+                  }
+                >
+                  <p>
+                    <b>{artist.name}</b>
+                  </p>
+                  <p>artist</p>
+                </Card>
+              </Link>
             ))}
           </Space>
         </div>
@@ -155,23 +162,25 @@ export default function NotificationPage() {
         <div className="flex flex-row justify-between  pl-12">
           <Space direction="horizontal" className="">
             {artists.map((artist) => (
-              <Card
-                key={artist.id}
-                className="bg-transparent border-transparent"
-                hoverable
-                style={{ width: 240, height: 320 }}
-                cover={
-                  <Avatar
-                    size={238}
-                    src={<img src={artist.image} alt="avatar" />}
-                  />
-                }
-              >
-                <p>
-                  <b>{artist.name}</b>
-                </p>
-                <p>artist</p>
-              </Card>
+              <Link href="/artistPage">
+                <Card
+                  key={artist.id}
+                  className="bg-transparent border-transparent"
+                  hoverable
+                  style={{ width: 240, height: 320 }}
+                  cover={
+                    <Avatar
+                      size={238}
+                      src={<img src={artist.image} alt="avatar" />}
+                    />
+                  }
+                >
+                  <p>
+                    <b>{artist.name}</b>
+                  </p>
+                  <p>artist</p>
+                </Card>
+              </Link>
             ))}
           </Space>
         </div>

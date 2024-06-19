@@ -8,6 +8,7 @@ import { FaUser } from "react-icons/fa";
 import { GoKebabHorizontal } from "react-icons/go";
 import { FaShuffle } from "react-icons/fa6";
 import { FaPlay } from "react-icons/fa";
+import Link from "next/link";
 const { Meta } = Card;
 interface DataType {
   key: string;
@@ -121,8 +122,10 @@ export default function PlaylistPage() {
             <b>sad songs</b>
           </p>
           <div className="flex flex-row m-5">
-            <FaUser className="m-3" />
-            <p className="m-3">Username</p>
+            <Link href="/profilePage">
+              <FaUser className="m-3" />
+              <p className="m-3">Username</p>
+            </Link>
             <p className="m-3">5 songs, 19 min 20 sec</p>
           </div>
         </div>

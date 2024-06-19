@@ -4,6 +4,7 @@ import { AiFillHome } from "react-icons/ai";
 import { FaSearch } from "react-icons/fa";
 import { SiBigbluebutton } from "react-icons/si";
 import { Space, theme } from "antd";
+import Link from "next/link";
 
 export default function TopSideBar() {
   const [collapsed, setCollapsed] = useState(false);
@@ -51,7 +52,9 @@ export default function TopSideBar() {
           <div className="">
             <SiBigbluebutton className="" />
           </div>
-          <div className="">BEAT +</div>
+          <Link href="/HomePage/withLogin">
+            <div className="">BEAT +</div>
+          </Link>
         </div>
         <div className="flex flex-row justify-center space-x-2 transition ease-in-out delay-50 hover:text-rose-900 hover:-translate-y-1 hover:scale-110 duration-300 text-slate-800 dark:text-slate-100">
           <div>

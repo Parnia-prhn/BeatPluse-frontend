@@ -4,6 +4,7 @@ import { Button, Space, Segmented } from "antd";
 import { MdLibraryMusic } from "react-icons/md";
 import { FaPlus } from "react-icons/fa";
 import { IoFilter } from "react-icons/io5";
+import Link from "next/link";
 const playlists = [
   {
     id: 1,
@@ -58,16 +59,18 @@ export default function LeftSideBarwithlogin() {
             <IoFilter className="ml-3" />
           </div>
           {playlists.map((playlist) => (
-            <div className="flex flex-row m-3" key={playlist.id}>
-              <div>
-                <img src={playlist.image} className="w-10" />
-              </div>
-              <div className="flex flex-col">
-                <div className="ml-2">{playlist.name}</div>
+            <Link href="/playListPage">
+              <div className="flex flex-row m-3" key={playlist.id}>
+                <div>
+                  <img src={playlist.image} className="w-10" />
+                </div>
+                <div className="flex flex-col">
+                  <div className="ml-2">{playlist.name}</div>
 
-                <p className="text-sm ml-2">.playlist</p>
+                  <p className="text-sm ml-2">.playlist</p>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
         <div className="flex justify-center mt-4">

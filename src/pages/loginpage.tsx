@@ -5,6 +5,7 @@ import { Input } from "antd";
 import { FaGoogle } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaApple } from "react-icons/fa";
+import Link from "next/link";
 
 export default function LoginPage() {
   return (
@@ -62,9 +63,11 @@ export default function LoginPage() {
             </Form.Item>
 
             <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-              <Button className="w-1/2" shape="round">
-                submit
-              </Button>
+              <Link href="/HomePage/withLogin">
+                <Button className="w-1/2" shape="round">
+                  submit
+                </Button>
+              </Link>
             </Form.Item>
             <Form.Item>
               <p>Forgot your password?</p>
@@ -73,7 +76,9 @@ export default function LoginPage() {
               <p>---------------------------------------------------</p>
             </Form.Item>
             <Form.Item>
-              <p>Don't have an account? signup</p>
+              <Link href="/auth/signup">
+                <p>Don't have an account? signup</p>
+              </Link>
             </Form.Item>
           </div>
         </form>

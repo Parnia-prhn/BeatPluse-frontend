@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Segmented } from "antd";
+import Link from "next/link";
 
 const playlists = [
   {

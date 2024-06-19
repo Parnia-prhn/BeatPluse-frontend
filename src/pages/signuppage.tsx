@@ -5,6 +5,7 @@ import { FaGoogle } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaApple } from "react-icons/fa";
 import Theme from "../../themeConfig";
+import Link from "next/link";
 
 export default function SignupPage() {
   return (
@@ -46,7 +47,9 @@ export default function SignupPage() {
               <p>---------------------------------------------------</p>
             </Form.Item>
             <Form.Item>
-              <p>Do you have an account? login</p>
+              <Link href="/auth/login">
+                <p>Do you have an account? login</p>
+              </Link>
             </Form.Item>
           </div>
         </form>

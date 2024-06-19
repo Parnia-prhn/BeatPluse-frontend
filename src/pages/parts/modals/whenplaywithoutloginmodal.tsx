@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "antd";
+import Link from "next/link";
 
 export default function Whenplaysongwithoutlogin() {
   return (
@@ -13,14 +14,16 @@ export default function Whenplaysongwithoutlogin() {
           <p className="text-slate-900 font-bold">
             start listening with a free BEAT+ account
           </p>
-
-          <Button shape="round" className="m-3">
-            signup free
-          </Button>
-
-          <Button shape="round" className="m-3">
-            login
-          </Button>
+          <Link href="/auth/signup">
+            <Button shape="round" className="m-3">
+              signup free
+            </Button>
+          </Link>
+          <Link href="/auth/login">
+            <Button shape="round" className="m-3">
+              login
+            </Button>
+          </Link>
         </div>
       </div>
     </>

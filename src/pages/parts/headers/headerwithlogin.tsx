@@ -4,6 +4,7 @@ import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosNotifications } from "react-icons/io";
 import { FaUser } from "react-icons/fa";
+import Link from "next/link";
 export default function Headerwithlogin() {
   return (
     <div className="bg-slate-300 rounded-lg  box-content  w-auto p-3 m-5 dark:bg-slate-800 ">
@@ -23,14 +24,18 @@ export default function Headerwithlogin() {
             </Button>
           </div>
           <div>
-            <Button
-              shape="circle"
-              className="m-2"
-              icon={<IoIosNotifications />}
-            />
+            <Link href="/notifications">
+              <Button
+                shape="circle"
+                className="m-2"
+                icon={<IoIosNotifications />}
+              />
+            </Link>
           </div>
           <div>
-            <Avatar className="m-2" icon={<FaUser />} />
+            <Link href="/profilePage">
+              <Avatar className="m-2" icon={<FaUser />} />
+            </Link>
           </div>
         </div>
       </div>
