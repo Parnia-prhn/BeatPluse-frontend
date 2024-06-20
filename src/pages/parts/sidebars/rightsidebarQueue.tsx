@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Segmented } from "antd";
 import Link from "next/link";
+import { useMusicPlayerStore } from "@/src/store/useMusicPlayerStore";
 
 const playlists = [
   {
@@ -31,6 +32,11 @@ const playlists = [
   },
 ];
 export default function RightSideBarQueue() {
+  const setShowMusicPlayer = useMusicPlayerStore(
+    (state) => state.setShowMusicPlayer
+  );
+  const showMusicPlayer = useMusicPlayerStore((state) => state.showMusicPlayer);
+
   return (
     <div className="bg-slate-100 rounded-lg box-content h-80 w-60 p-3 mt-4 ml-3  dark:bg-slate-800">
       <div className="flex flex-col overflow-y-scroll  w-60 h-60 mt-7 bg-slate-300">
@@ -41,10 +47,16 @@ export default function RightSideBarQueue() {
         {playlists.map((playlist) => (
           <div className="flex flex-row m-3" key={playlist.id}>
             <div>
-              <img src={playlist.image} className="w-10" />
+              <img
+                src={playlist.image}
+                onClick={() => setShowMusicPlayer(true)}
+                className="w-10"
+              />
             </div>
             <div className="flex flex-col">
-              <div className="ml-2">{playlist.name}</div>
+              <div className="ml-2" onClick={() => setShowMusicPlayer(true)}>
+                {playlist.name}
+              </div>
 
               <p className="text-sm ml-2">.playlist</p>
             </div>

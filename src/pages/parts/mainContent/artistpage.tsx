@@ -3,6 +3,8 @@ import { Card, Avatar, Space, Button } from "antd";
 import { GoKebabHorizontal } from "react-icons/go";
 import { FaPlay } from "react-icons/fa";
 import Link from "next/link";
+import MusicPlayer from "../sidebars/musicPlayer";
+import { useMusicPlayerStore } from "@/src/store/useMusicPlayerStore";
 const { Meta } = Card;
 const artists = [
   {
@@ -104,6 +106,10 @@ const playlists = [
   },
 ];
 export default function ArtistPage() {
+  const setShowMusicPlayer = useMusicPlayerStore(
+    (state) => state.setShowMusicPlayer
+  );
+  const showMusicPlayer = useMusicPlayerStore((state) => state.showMusicPlayer);
   return (
     <div className="">
       <img
@@ -135,10 +141,16 @@ export default function ArtistPage() {
             key={playlist.id}
           >
             <div>
-              <img src={playlist.image} className="w-10" />
+              <img
+                src={playlist.image}
+                onClick={() => setShowMusicPlayer(true)}
+                className="w-10"
+              />
             </div>
             <div className="flex flex-col">
-              <div className="ml-2">{playlist.name}</div>
+              <div className="ml-2" onClick={() => setShowMusicPlayer(true)}>
+                {playlist.name}
+              </div>
 
               <div className="flex ml-2">1000000 </div>
               <div className="flex ml-2">3:10</div>

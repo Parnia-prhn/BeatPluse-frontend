@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button, Segmented } from "antd";
 import { FaPlay } from "react-icons/fa";
+import { useMusicPlayerStore } from "@/src/store/useMusicPlayerStore";
 
 const albums = [
   {
@@ -36,6 +37,11 @@ const albums = [
   },
 ];
 export default function NotificationPage() {
+  const setShowMusicPlayer = useMusicPlayerStore(
+    (state) => state.setShowMusicPlayer
+  );
+  const showMusicPlayer = useMusicPlayerStore((state) => state.showMusicPlayer);
+
   return (
     <div>
       <div className="flex flex-col m-5">
@@ -57,16 +63,23 @@ export default function NotificationPage() {
                 --------------------------------------------------------------
               </b>
               <div>
-                <img src={album.image} className="w-20" />
+                <img
+                  src={album.image}
+                  onClick={() => setShowMusicPlayer(true)}
+                  className="w-20"
+                />
               </div>
               <div className="flex flex-col">
-                <div className="m-2">{album.name}</div>
+                <div className="m-2" onClick={() => setShowMusicPlayer(true)}>
+                  {album.name}
+                </div>
               </div>
               <div className="m-2">description</div>
               <div className="m-2">
                 <Button
                   shape="circle"
                   className="m-2 text-end"
+                  onClick={() => setShowMusicPlayer(true)}
                   icon={<FaPlay />}
                 />
               </div>

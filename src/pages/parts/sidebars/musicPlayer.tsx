@@ -52,13 +52,13 @@ export default function MusicPlayer() {
     setOpenInfo(false);
   };
   return (
-    <div className="w-full bg-slate-300 dark:bg-slate-900 rounded-lg">
+    <div className="fixed bottom-0 left-0 w-full h-1/4 bg-slate-300 dark:bg-slate-900 rounded-lg p-3 m-4">
       <div className="flex flex-row m-3 p-3 ">
         <div className="flex justify-start basis-1/4">
           <img
             src="https://i.scdn.co/image/ab67616d0000b273dc3d61d589160ff29b775bc9"
             className="size-11 m-3"
-            onClick={showDrawer}
+            onClick={showDrawerInfo}
           />
           <div className="flex flex-col">
             <p className="p-2">
