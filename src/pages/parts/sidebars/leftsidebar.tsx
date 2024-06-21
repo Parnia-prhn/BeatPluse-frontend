@@ -55,7 +55,6 @@ export default function LeftSideBar() {
           onChange={toggleDarkMode}
           checkedChildren="Dark"
           unCheckedChildren="Light"
-          className="m-2 p-2 place-content-center"
         />
       </div>
     </Space>

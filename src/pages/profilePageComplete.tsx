@@ -6,11 +6,23 @@ import TopSideBar from "./parts/sidebars/topsidebar";
 import ProfilePage from "./parts/mainContent/profilePage";
 import { Layout, ConfigProvider } from "antd";
 import Theme from "../../themeConfig";
+import theme from "../../darkTheme";
+import { useDarkModeStore } from "@/src/store/useDarkModeStore";
+import { useEffect } from "react";
 const { Header, Content, Footer, Sider } = Layout;
 export default function ProfilePageComplete() {
+  const { darkMode, toggleDarkMode } = useDarkModeStore();
+
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [darkMode]);
   return (
     <div>
-      <ConfigProvider theme={Theme}>
+      <ConfigProvider theme={darkMode ? theme : Theme}>
         <Layout className="dark:bg-slate-700">
           <Sider width={300} style={{ position: "fixed", overflow: "auto" }}>
             <TopSideBar />

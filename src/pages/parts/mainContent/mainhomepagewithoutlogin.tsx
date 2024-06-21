@@ -124,23 +124,25 @@ export default function Mainhomepagewithoutlogin() {
       <div className="flex flex-row justify-between  pl-12">
         <Space direction="horizontal" className="">
           {artists.map((artist) => (
-            <Card
-              key={artist.id}
-              className="bg-transparent border-transparent dark:text-slate-300"
-              hoverable
-              style={{ width: 240, height: 320 }}
-              cover={
-                <Avatar
-                  size={238}
-                  src={<img src={artist.image} alt="avatar" />}
-                />
-              }
-            >
-              <p>
-                <b>{artist.name}</b>
-              </p>
-              <p>artist</p>
-            </Card>
+            <Link href="/artistPage">
+              <Card
+                key={artist.id}
+                className="bg-transparent border-transparent dark:text-slate-300"
+                hoverable
+                style={{ width: 240, height: 320 }}
+                cover={
+                  <Avatar
+                    size={238}
+                    src={<img src={artist.image} alt="avatar" />}
+                  />
+                }
+              >
+                <p>
+                  <b>{artist.name}</b>
+                </p>
+                <p>artist</p>
+              </Card>
+            </Link>
           ))}
         </Space>
       </div>
@@ -155,7 +157,7 @@ export default function Mainhomepagewithoutlogin() {
       <div className="flex justify-between  pl-12">
         <Space direction="horizontal" className="">
           {albums.map((album) => (
-            <Link href="/ArtistPage/artistPageComplete">
+            <Link href="/playListPage">
               <Card
                 key={album.id}
                 className="bg-transparent border-transparent dark:text-slate-300"
@@ -189,23 +191,25 @@ export default function Mainhomepagewithoutlogin() {
       <div className="flex justify-between pl-12">
         <Space direction="horizontal" className="">
           {radio.map((radio) => (
-            <Card
-              key={radio.id}
-              className="bg-transparent border-transparent dark:text-slate-300"
-              hoverable
-              style={{ width: 240, height: 320 }}
-              cover={
-                <Avatar
-                  shape="square"
-                  size={238}
-                  src={<img src={radio.image} alt="avatar" />}
-                />
-              }
-            >
-              <p>
-                <b>{radio.name}</b>
-              </p>
-            </Card>
+            <Link href="/playListPage">
+              <Card
+                key={radio.id}
+                className="bg-transparent border-transparent dark:text-slate-300"
+                hoverable
+                style={{ width: 240, height: 320 }}
+                cover={
+                  <Avatar
+                    shape="square"
+                    size={238}
+                    src={<img src={radio.image} alt="avatar" />}
+                  />
+                }
+              >
+                <p>
+                  <b>{radio.name}</b>
+                </p>
+              </Card>
+            </Link>
           ))}
         </Space>
       </div>
@@ -220,23 +224,25 @@ export default function Mainhomepagewithoutlogin() {
       <div className="flex justify-between pl-12">
         <Space direction="horizontal" className="">
           {playlists.map((playlist) => (
-            <Card
-              key={playlist.id}
-              className="bg-transparent border-transparent dark:text-slate-300"
-              hoverable
-              style={{ width: 240, height: 320 }}
-              cover={
-                <Avatar
-                  shape="square"
-                  size={238}
-                  src={<img src={playlist.image} alt="avatar" />}
-                />
-              }
-            >
-              <p>
-                <b>{playlist.name}</b>
-              </p>
-            </Card>
+            <Link href="/playListPage">
+              <Card
+                key={playlist.id}
+                className="bg-transparent border-transparent dark:text-slate-300"
+                hoverable
+                style={{ width: 240, height: 320 }}
+                cover={
+                  <Avatar
+                    shape="square"
+                    size={238}
+                    src={<img src={playlist.image} alt="avatar" />}
+                  />
+                }
+              >
+                <p>
+                  <b>{playlist.name}</b>
+                </p>
+              </Card>
+            </Link>
           ))}
         </Space>
       </div>
