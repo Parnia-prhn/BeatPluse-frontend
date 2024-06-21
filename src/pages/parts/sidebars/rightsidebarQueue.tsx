@@ -38,8 +38,8 @@ export default function RightSideBarQueue() {
   const showMusicPlayer = useMusicPlayerStore((state) => state.showMusicPlayer);
 
   return (
-    <div className="bg-slate-100 rounded-lg box-content h-80 w-60 p-3 mt-4 ml-3  dark:bg-slate-800">
-      <div className="flex flex-col overflow-y-scroll  w-60 h-60 mt-7 bg-slate-300">
+    <div className="bg-slate-300 rounded-lg box-content h-full w-full p-3 mt-4 ml-3  dark:bg-slate-800 dark:text-slate-300">
+      <div className="flex flex-col overflow-y-scroll  w-auto h-auto mt-7 bg-slate-300 dark:bg-slate-700">
         <div className="flex justify-center m-1">
           <Segmented<string> options={["Queue", "Recently Played"]} />
         </div>

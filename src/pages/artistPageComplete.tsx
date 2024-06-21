@@ -5,12 +5,14 @@ import TopSideBar from "./parts/sidebars/topsidebar";
 import ArtistPage from "./parts/mainContent/artistpage";
 import { Layout, ConfigProvider } from "antd";
 import Theme from "../../themeConfig";
+import DarkTheme from "../../darkTheme";
+
 const { Header, Content, Footer, Sider } = Layout;
 export default function ArtistPageComplete() {
   return (
     <div>
       <ConfigProvider theme={Theme}>
-        <Layout>
+        <Layout className="dark:bg-slate-700">
           <Sider width={300} style={{ position: "fixed", overflow: "auto" }}>
             <TopSideBar />
             <LeftSideBarWithLogin />

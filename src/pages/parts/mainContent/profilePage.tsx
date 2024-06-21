@@ -58,9 +58,9 @@ export default function NotificationPage() {
   return (
     <div>
       <div className="flex flex-col m-5">
-        <div className="flex flex-row">
+        <div className="flex flex-row dark:text-slate-300">
           <Avatar size={92} icon={<FaUser />} className="m-6" />
-          <div className="flex flex-col m-6">
+          <div className="flex flex-col m-6 dark:text-slate-300">
             <p>
               <b>Username</b>
             </p>
@@ -69,9 +69,9 @@ export default function NotificationPage() {
           </div>
         </div>
         <div>
-          <GoKebabHorizontal className="m-6" />
+          <GoKebabHorizontal className="m-6 dark:text-slate-300" />
         </div>
-        <p className="m-3">
+        <p className="m-3 dark:text-slate-300">
           <b>Top Artist of this month</b>
         </p>
         <div className="flex flex-row justify-between  pl-12 m-4">
@@ -80,7 +80,7 @@ export default function NotificationPage() {
               <Link href="/artistPage">
                 <Card
                   key={artist.id}
-                  className="bg-transparent border-transparent"
+                  className="bg-transparent border-transparent dark:text-slate-300"
                   hoverable
                   style={{ width: 240, height: 320 }}
                   cover={
@@ -99,7 +99,7 @@ export default function NotificationPage() {
             ))}
           </Space>
         </div>
-        <p className="m-3">
+        <p className="m-3 dark:text-slate-300">
           <b>your playlists</b>
         </p>
         <div className="flex justify-between  pl-12 m-3">
@@ -108,7 +108,7 @@ export default function NotificationPage() {
               <Link href="/playListPage">
                 <Card
                   key={album.id}
-                  className="bg-transparent border-transparent"
+                  className="bg-transparent border-transparent dark:text-slate-300"
                   hoverable
                   style={{ width: 240, height: 320 }}
                   cover={
@@ -128,7 +128,7 @@ export default function NotificationPage() {
             ))}
           </Space>
         </div>
-        <p className="m-3">
+        <p className="m-3 dark:text-slate-300">
           <b>following</b>
         </p>
         <div className="flex flex-row justify-between  pl-12 m-3">
@@ -137,7 +137,7 @@ export default function NotificationPage() {
               <Link href="/artistPage">
                 <Card
                   key={artist.id}
-                  className="bg-transparent border-transparent"
+                  className="bg-transparent border-transparent dark:text-slate-300"
                   hoverable
                   style={{ width: 240, height: 320 }}
                   cover={
@@ -156,7 +156,7 @@ export default function NotificationPage() {
             ))}
           </Space>
         </div>
-        <p className="m-3">
+        <p className="m-3 dark:text-slate-300">
           <b>follower</b>
         </p>
         <div className="flex flex-row justify-between  pl-12">
@@ -165,7 +165,7 @@ export default function NotificationPage() {
               <Link href="/artistPage">
                 <Card
                   key={artist.id}
-                  className="bg-transparent border-transparent"
+                  className="bg-transparent border-transparent dark:text-slate-300"
                   hoverable
                   style={{ width: 240, height: 320 }}
                   cover={

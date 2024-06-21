@@ -113,7 +113,7 @@ export default function Mainhomepagewithlogin() {
       <div className="flex flex-row">
         {playlists.map((playlist) => (
           <div
-            className="flex flex-row m-3 w-1/3 p-2 bg-slate-300 rounded-lg dark:bg-slate-700"
+            className="flex flex-row m-3 w-1/3 p-2 bg-slate-300 rounded-lg dark:bg-slate-600 dark:text-slate-300"
             key={playlist.id}
           >
             <div>
@@ -131,7 +131,9 @@ export default function Mainhomepagewithlogin() {
         ))}
       </div>
       <Space direction="horizontal" className="">
-        <div className="  p-3 m-3 justify-self-end">artists</div>
+        <div className="  p-3 m-3 justify-self-end dark:text-slate-300">
+          artists
+        </div>
         <div className=" p-3 m-3 justify-self-end place-items-end justify-items-end align-items-end">
           <Button
             className="justify-self-end place-self-end align-end"
@@ -148,7 +150,7 @@ export default function Mainhomepagewithlogin() {
             <Link href="/artistPage">
               <Card
                 key={artist.id}
-                className="bg-transparent border-transparent"
+                className="bg-transparent border-transparent dark:text-slate-300"
                 hoverable
                 style={{ width: 240, height: 320 }}
                 cover={
@@ -168,7 +170,9 @@ export default function Mainhomepagewithlogin() {
         </Space>
       </div>
       <Space direction="horizontal" className="flex-row">
-        <div className=" p-3 m-3 justify-self-end">albums</div>
+        <div className=" p-3 m-3 justify-self-end dark:text-slate-300">
+          albums
+        </div>
         <div className=" p-3 m-3 justify-self-end">
           <Button type="text">show all</Button>
         </div>
@@ -179,7 +183,7 @@ export default function Mainhomepagewithlogin() {
             <Link href="/playListPage">
               <Card
                 key={album.id}
-                className="bg-transparent border-transparent"
+                className="bg-transparent border-transparent dark:text-slate-300"
                 hoverable
                 style={{ width: 240, height: 320 }}
                 cover={
@@ -200,7 +204,9 @@ export default function Mainhomepagewithlogin() {
         </Space>
       </div>
       <Space direction="horizontal" className="flex-row">
-        <div className="  p-3 m-3 justify-self-end">radio</div>
+        <div className="  p-3 m-3 justify-self-end dark:text-slate-300">
+          radio
+        </div>
         <div className=" p-3 m-3 justify-self-end">
           <Button type="text">show all</Button>
         </div>
@@ -211,7 +217,7 @@ export default function Mainhomepagewithlogin() {
             <Link href="/playListPage">
               <Card
                 key={radio.id}
-                className="bg-transparent border-transparent"
+                className="bg-transparent border-transparent dark:text-slate-300"
                 hoverable
                 style={{ width: 240, height: 320 }}
                 cover={
@@ -231,7 +237,9 @@ export default function Mainhomepagewithlogin() {
         </Space>
       </div>
       <Space direction="horizontal" className="flex-row">
-        <div className=" p-3 m-3 justify-self-end">playlists</div>
+        <div className=" p-3 m-3 justify-self-end dark:text-slate-300">
+          playlists
+        </div>
         <div className=" p-3 m-3 justify-self-end">
           <Button type="text">show all</Button>
         </div>
@@ -242,7 +250,7 @@ export default function Mainhomepagewithlogin() {
             <Link href="/playListPage">
               <Card
                 key={playlist.id}
-                className="bg-transparent border-transparent"
+                className="bg-transparent border-transparent dark:text-slate-300"
                 hoverable
                 style={{ width: 240, height: 320 }}
                 cover={

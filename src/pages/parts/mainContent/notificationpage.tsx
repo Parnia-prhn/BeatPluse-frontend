@@ -44,7 +44,7 @@ export default function NotificationPage() {
 
   return (
     <div>
-      <div className="flex flex-col m-5">
+      <div className="flex flex-col m-5 dark:text-slate-300">
         <p>
           <b> Whats new? </b>
         </p>

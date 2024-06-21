@@ -31,18 +31,18 @@ const playlists = [
 ];
 export default function RightSideBarSongInformation() {
   return (
-    <div className="bg-slate-100 rounded-lg box-content h-80 w-60 p-3 mt-4 ml-3  dark:bg-slate-800">
+    <div className="bg-slate-300 rounded-lg box-content h-auto w-auto p-3 mt-4 ml-3  dark:bg-slate-800 dark:text-slate-300">
       <div className="flex flex-col">
         <img
           src="https://i.scdn.co/image/ab67616d0000b273dc3d61d589160ff29b775bc9"
-          className="size-15 m-3"
+          className="size-15 m-3 rounded-lg"
         />
         <p className=" m-2">
           <b>who i am</b>
         </p>
         <img
           src="https://billgrahamcivic.com/wp-content/uploads/2022/05/AlanWalker_1024-2.jpg"
-          className="size-15 m-3"
+          className="size-15 m-3 rounded-lg"
         />
         <p className=" m-2">
           <Link href="/artistPage">

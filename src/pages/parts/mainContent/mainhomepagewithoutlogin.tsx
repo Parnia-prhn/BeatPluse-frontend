@@ -108,7 +108,9 @@ export default function Mainhomepagewithoutlogin() {
   return (
     <div className="">
       <Space direction="horizontal" className="">
-        <div className="  p-3 m-3 justify-self-end">Popular artists</div>
+        <div className="  p-3 m-3 justify-self-end dark:text-slate-300">
+          Popular artists
+        </div>
         <div className=" p-3 m-3 justify-self-end place-items-end justify-items-end align-items-end">
           <Button
             className="justify-self-end place-self-end align-end"
@@ -124,7 +126,7 @@ export default function Mainhomepagewithoutlogin() {
           {artists.map((artist) => (
             <Card
               key={artist.id}
-              className="bg-transparent border-transparent"
+              className="bg-transparent border-transparent dark:text-slate-300"
               hoverable
               style={{ width: 240, height: 320 }}
               cover={
@@ -143,7 +145,9 @@ export default function Mainhomepagewithoutlogin() {
         </Space>
       </div>
       <Space direction="horizontal" className="flex-row">
-        <div className=" p-3 m-3 justify-self-end">Popular albums</div>
+        <div className=" p-3 m-3 justify-self-end dark:text-slate-300">
+          Popular albums
+        </div>
         <div className=" p-3 m-3 justify-self-end">
           <Button type="text">show all</Button>
         </div>
@@ -154,7 +158,7 @@ export default function Mainhomepagewithoutlogin() {
             <Link href="/ArtistPage/artistPageComplete">
               <Card
                 key={album.id}
-                className="bg-transparent border-transparent"
+                className="bg-transparent border-transparent dark:text-slate-300"
                 hoverable
                 style={{ width: 240, height: 320 }}
                 cover={
@@ -175,7 +179,9 @@ export default function Mainhomepagewithoutlogin() {
         </Space>
       </div>
       <Space direction="horizontal" className="flex-row">
-        <div className="  p-3 m-3 justify-self-end">Popular radio</div>
+        <div className="  p-3 m-3 justify-self-end dark:text-slate-300">
+          Popular radio
+        </div>
         <div className=" p-3 m-3 justify-self-end">
           <Button type="text">show all</Button>
         </div>
@@ -185,7 +191,7 @@ export default function Mainhomepagewithoutlogin() {
           {radio.map((radio) => (
             <Card
               key={radio.id}
-              className="bg-transparent border-transparent"
+              className="bg-transparent border-transparent dark:text-slate-300"
               hoverable
               style={{ width: 240, height: 320 }}
               cover={
@@ -204,7 +210,9 @@ export default function Mainhomepagewithoutlogin() {
         </Space>
       </div>
       <Space direction="horizontal" className="flex-row">
-        <div className=" p-3 m-3 justify-self-end">BEATplus playlists</div>
+        <div className=" p-3 m-3 justify-self-end dark:text-slate-300">
+          BEATplus playlists
+        </div>
         <div className=" p-3 m-3 justify-self-end">
           <Button type="text">show all</Button>
         </div>
@@ -214,7 +222,7 @@ export default function Mainhomepagewithoutlogin() {
           {playlists.map((playlist) => (
             <Card
               key={playlist.id}
-              className="bg-transparent border-transparent"
+              className="bg-transparent border-transparent dark:text-slate-300"
               hoverable
               style={{ width: 240, height: 320 }}
               cover={

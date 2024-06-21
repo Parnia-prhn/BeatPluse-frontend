@@ -11,7 +11,7 @@ export default function ProfilePageComplete() {
   return (
     <div>
       <ConfigProvider theme={Theme}>
-        <Layout>
+        <Layout className="dark:bg-slate-700">
           <Sider width={300} style={{ position: "fixed", overflow: "auto" }}>
             <TopSideBar />
             <LeftSideBarWithLogin />

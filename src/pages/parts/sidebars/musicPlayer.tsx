@@ -52,7 +52,7 @@ export default function MusicPlayer() {
     setOpenInfo(false);
   };
   return (
-    <div className="fixed bottom-0 left-0 w-full h-1/4 bg-slate-300 dark:bg-slate-900 rounded-lg p-3 m-4">
+    <div className="fixed bottom-0 left-0 w-full h-1/4 bg-slate-300 dark:bg-slate-800 rounded-lg p-3 m-4 dark:text-slate-300">
       <div className="flex flex-row m-3 p-3 ">
         <div className="flex justify-start basis-1/4">
           <img

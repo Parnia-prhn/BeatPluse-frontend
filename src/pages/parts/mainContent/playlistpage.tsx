@@ -227,7 +227,7 @@ export default function PlaylistPage() {
           src="https://i.scdn.co/image/ab67706f00000002583117b5f326c5759bcd4628"
           className="justify-start w-35 m-4 p-3"
         />
-        <div className="flex flex-col m-5">
+        <div className="flex flex-col m-5 dark:text-slate-300">
           <p>
             <b>sad songs</b>
           </p>
@@ -240,7 +240,7 @@ export default function PlaylistPage() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col m-3">
+      <div className="flex flex-col m-3 dark:text-slate-300">
         <div className="flex flex-row">
           <FaPlay className="size-9 m-3" />
           <FaShuffle className="size-6 m-3" />

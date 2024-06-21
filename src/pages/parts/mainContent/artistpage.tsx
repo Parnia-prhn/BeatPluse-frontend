@@ -114,13 +114,13 @@ export default function ArtistPage() {
     <div className="">
       <img
         src="https://www.festivalsunited.com/images/artists/alan-walker-46b95031dacb8da.jpg"
-        className="w-full h-1/4 p-3 m-4 rounded-lg"
+        className="w-full h-1/4 p-3 m-4 rounded-md"
       />
-      <div className="p-3 m-4">
+      <div className="p-3 m-4 dark:text-slate-300">
         <b>Alan walker</b>
         <p>30000000 monthly listener</p>
       </div>
-      <div className="flex flex-row p-3 m-4">
+      <div className="flex flex-row p-3 m-4 dark:text-slate-300">
         <Button shape="circle" className="m-2" icon={<FaPlay />} />
 
         <Button shape="round" className="m-2">
@@ -131,13 +131,13 @@ export default function ArtistPage() {
           <GoKebabHorizontal className="mt-3" />
         </div>
       </div>
-      <div className="p-3 m-4">
+      <div className="p-3 m-4 dark:text-slate-300">
         <b>popular</b>
       </div>
       <div className="flex flex-col">
         {playlists.map((playlist) => (
           <div
-            className="flex flex-row m-3 w-1/1 p-2 bg-slate-300 rounded-lg dark:bg-slate-700"
+            className="flex flex-row m-3 w-1/1 p-2 bg-slate-300 rounded-lg dark:bg-slate-800 dark:text-slate-300"
             key={playlist.id}
           >
             <div>
@@ -159,7 +159,9 @@ export default function ArtistPage() {
         ))}
       </div>
       <Space direction="horizontal" className="">
-        <div className="  p-3 m-3 justify-self-end">Related artists</div>
+        <div className="  p-3 m-3 justify-self-end dark:text-slate-300">
+          Related artists
+        </div>
         <div className=" p-3 m-3 justify-self-end place-items-end justify-items-end align-items-end">
           <Button
             className="justify-self-end place-self-end align-end"
@@ -176,7 +178,7 @@ export default function ArtistPage() {
             <Link href="artistPage">
               <Card
                 key={artist.id}
-                className="bg-transparent border-transparent"
+                className="bg-transparent border-transparent dark:text-slate-300"
                 hoverable
                 style={{ width: 240, height: 320 }}
                 cover={
@@ -196,7 +198,9 @@ export default function ArtistPage() {
         </Space>
       </div>
       <Space direction="horizontal" className="flex-row">
-        <div className=" p-3 m-3 justify-self-end">Related albums</div>
+        <div className=" p-3 m-3 justify-self-end dark:text-slate-300">
+          Related albums
+        </div>
         <div className=" p-3 m-3 justify-self-end">
           <Button type="text">show all</Button>
         </div>
@@ -207,7 +211,7 @@ export default function ArtistPage() {
             <Link href="/playListPage">
               <Card
                 key={album.id}
-                className="bg-transparent border-transparent"
+                className="bg-transparent border-transparent dark:text-slate-300"
                 hoverable
                 style={{ width: 240, height: 320 }}
                 cover={
@@ -228,7 +232,9 @@ export default function ArtistPage() {
         </Space>
       </div>
       <Space direction="horizontal" className="flex-row">
-        <div className="  p-3 m-3 justify-self-end">Related radio</div>
+        <div className="  p-3 m-3 justify-self-end dark:text-slate-300">
+          Related radio
+        </div>
         <div className=" p-3 m-3 justify-self-end">
           <Button type="text">show all</Button>
         </div>
@@ -239,7 +245,7 @@ export default function ArtistPage() {
             <Link href="/playListPage">
               <Card
                 key={radio.id}
-                className="bg-transparent border-transparent"
+                className="bg-transparent border-transparent dark:text-slate-300"
                 hoverable
                 style={{ width: 240, height: 320 }}
                 cover={
@@ -259,7 +265,9 @@ export default function ArtistPage() {
         </Space>
       </div>
       <Space direction="horizontal" className="flex-row">
-        <div className=" p-3 m-3 justify-self-end">Related playlists</div>
+        <div className=" p-3 m-3 justify-self-end dark:text-slate-300">
+          Related playlists
+        </div>
         <div className=" p-3 m-3 justify-self-end">
           <Button type="text">show all</Button>
         </div>
@@ -270,7 +278,7 @@ export default function ArtistPage() {
             <Link href="/playListPage">
               <Card
                 key={playlist.id}
-                className="bg-transparent border-transparent"
+                className="bg-transparent border-transparent dark:text-slate-300"
                 hoverable
                 style={{ width: 240, height: 320 }}
                 cover={

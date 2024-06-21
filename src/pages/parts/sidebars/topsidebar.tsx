@@ -60,13 +60,17 @@ export default function TopSideBar() {
           <div>
             <AiFillHome className="" />
           </div>
-          <div className="">Home</div>
+          <Link href="/HomePage/withoutLogin">
+            <div className="">Home</div>
+          </Link>
         </div>
         <div className="flex flex-row justify-center space-x-2 transition ease-in-out delay-50 hover:text-rose-900 hover:-translate-y-1 hover:scale-110 duration-300 text-slate-800 dark:text-slate-100">
           <div>
             <FaSearch className="" />
           </div>
-          <div className="">Search</div>
+          <Link href="Search/searchPageWithoutLogin">
+            <div className="">Search</div>
+          </Link>
         </div>
       </Space>
       <div

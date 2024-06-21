@@ -9,9 +9,9 @@ import Link from "next/link";
 
 export default function SignupPage() {
   return (
-    <div>
+    <div className="dark:bg-slate-700">
       <ConfigProvider theme={Theme}>
-        <form className="flex justify-center m-5 p-5">
+        <form className="flex justify-center m-5 p-5 dark:text-slate-300">
           <div className="flex flex-col">
             <Form.Item className="w-1/1 " label="Email address">
               <Input

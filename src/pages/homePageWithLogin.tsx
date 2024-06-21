@@ -10,7 +10,7 @@ export default function HomePageWithLogin() {
   return (
     <div>
       <ConfigProvider theme={Theme}>
-        <Layout>
+        <Layout className="dark:bg-slate-700">
           <Sider width={300} style={{ position: "fixed", overflow: "auto" }}>
             <TopSideBar />
             <LeftSideBarWithLogin />
@@ -28,4 +28,4 @@ export default function HomePageWithLogin() {
       </ConfigProvider>
     </div>
   );
-} 
+}
