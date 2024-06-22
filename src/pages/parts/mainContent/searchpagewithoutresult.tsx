@@ -17,13 +17,13 @@ const genres = [
 export default function Searchpagewithoutresult() {
   return (
     <div>
-      <div className="flex flex-row justify-between  pl-12 m-4 p-3">
+      <div className="flex flex-col md:flex-row justify-between  pl-12 m-4 p-3">
         <Space direction="horizontal" wrap className="">
           {genres.map((genre) => (
             <Link href="/playListPage">
               <div
                 key={genre.id}
-                className="text-white w-40 h-40 p-5 font-bold rounded-lg bg-gradient-to-r from-violet-500 to-fuchsia-500"
+                className="text-white w-25 h-25 text-lg md:w-40 md:h-40 md:text-base p-5 font-bold rounded-lg bg-gradient-to-r from-violet-500 to-fuchsia-500"
               >
                 {genre.name}
               </div>

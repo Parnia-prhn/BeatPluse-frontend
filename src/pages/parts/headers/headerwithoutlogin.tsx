@@ -6,17 +6,17 @@ import Link from "next/link";
 export default function Headerwithoutlogin() {
   return (
     <div className="bg-slate-300 rounded-lg  box-content  w-auto p-3 m-5 dark:bg-slate-800 ">
-      <div className="flex flex-row space-x-20 justify-items-center">
-        <div className="flex-row">
-          <Space align="start">
-            <Button shape="circle" icon={<IoIosArrowBack />} />
+      <div className="flex flex-col  md:flex-row space-x-20 justify-items-center">
+        <div className="flex flex-col md:flex-row">
+          {/* <Space align="start"> */}
+          <Button shape="circle" icon={<IoIosArrowBack />} className="m-2" />
 
-            <Button shape="circle" icon={<IoIosArrowForward />} />
-          </Space>
+          <Button shape="circle" icon={<IoIosArrowForward />} className="m-2" />
+          {/* </Space> */}
         </div>
 
         {/* <div className="flex flex-row justify-items-end justify-end"> */}
-        <div className="flex flex-row justify-items-end justify-end">
+        <div className="flex flex-col md:flex-row justify-items-end justify-end">
           <div>
             <Link href="/auth/signup/">
               <Button shape="round">signup</Button>
