@@ -16,7 +16,7 @@ export default function Headerwithoutlogin() {
         </div>
 
         {/* <div className="flex flex-row justify-items-end justify-end"> */}
-        <div className="flex flex-col md:flex-row justify-items-end justify-end">
+        <div className="flex flex-col md:flex-row justify-items-start md:justify-items-end md:justify-end">
           <div>
             <Link href="/auth/signup/">
               <Button shape="round">signup</Button>

@@ -54,11 +54,11 @@ const albums = [
     image: "https://i.scdn.co/image/ab67616d00001e02df9a35baaa98675256b35177",
   },
 ];
-export default function NotificationPage() {
+export default function ProfilePage() {
   return (
     <div>
       <div className="flex flex-col m-5">
-        <div className="flex flex-row dark:text-slate-300">
+        <div className="flex flex-col md:flex-row dark:text-slate-300">
           <Avatar size={92} icon={<FaUser />} className="m-6" />
           <div className="flex flex-col m-6 dark:text-slate-300">
             <p>
@@ -74,115 +74,107 @@ export default function NotificationPage() {
         <p className="m-3 dark:text-slate-300">
           <b>Top Artist of this month</b>
         </p>
-        <div className="flex flex-row justify-between  pl-12 m-4">
-          <Space direction="horizontal" className="">
-            {artists.map((artist) => (
-              <Link href="/artistPage">
-                <Card
-                  key={artist.id}
-                  className="bg-transparent border-transparent dark:text-slate-300"
-                  hoverable
-                  style={{ width: 240, height: 320 }}
-                  cover={
-                    <Avatar
-                      size={238}
-                      src={<img src={artist.image} alt="avatar" />}
-                    />
-                  }
-                >
-                  <p>
-                    <b>{artist.name}</b>
-                  </p>
-                  <p>artist</p>
-                </Card>
-              </Link>
-            ))}
-          </Space>
+        <div className="flex flex-col space-y-2 flex-wrap md:flex-col md:space-x-4 lg:flex-row lg:space-x-0 justify-between  pl-12">
+          {artists.map((artist) => (
+            <Link href="/artistPage">
+              <Card
+                key={artist.id}
+                className="bg-transparent border-transparent dark:text-slate-300"
+                hoverable
+                style={{ width: 240, height: 320 }}
+                cover={
+                  <Avatar
+                    size={238}
+                    src={<img src={artist.image} alt="avatar" />}
+                  />
+                }
+              >
+                <p>
+                  <b>{artist.name}</b>
+                </p>
+                <p>artist</p>
+              </Card>
+            </Link>
+          ))}
         </div>
         <p className="m-3 dark:text-slate-300">
           <b>your playlists</b>
         </p>
-        <div className="flex justify-between  pl-12 m-3">
-          <Space direction="horizontal" className="">
-            {albums.map((album) => (
-              <Link href="/playListPage">
-                <Card
-                  key={album.id}
-                  className="bg-transparent border-transparent dark:text-slate-300"
-                  hoverable
-                  style={{ width: 240, height: 320 }}
-                  cover={
-                    <Avatar
-                      shape="square"
-                      size={238}
-                      src={<img src={album.image} alt="avatar" />}
-                    />
-                  }
-                >
-                  <p>
-                    <b>{album.name}</b>
-                  </p>
-                  <p>{album.artist}</p>
-                </Card>
-              </Link>
-            ))}
-          </Space>
+        <div className="flex flex-col space-y-2 flex-wrap md:flex-col md:space-x-4 lg:flex-row lg:space-x-0 justify-between  pl-12">
+          {albums.map((album) => (
+            <Link href="/playListPage">
+              <Card
+                key={album.id}
+                className="bg-transparent border-transparent dark:text-slate-300"
+                hoverable
+                style={{ width: 240, height: 320 }}
+                cover={
+                  <Avatar
+                    shape="square"
+                    size={238}
+                    src={<img src={album.image} alt="avatar" />}
+                  />
+                }
+              >
+                <p>
+                  <b>{album.name}</b>
+                </p>
+                <p>{album.artist}</p>
+              </Card>
+            </Link>
+          ))}
         </div>
         <p className="m-3 dark:text-slate-300">
           <b>following</b>
         </p>
-        <div className="flex flex-row justify-between  pl-12 m-3">
-          <Space direction="horizontal" className="">
-            {artists.map((artist) => (
-              <Link href="/artistPage">
-                <Card
-                  key={artist.id}
-                  className="bg-transparent border-transparent dark:text-slate-300"
-                  hoverable
-                  style={{ width: 240, height: 320 }}
-                  cover={
-                    <Avatar
-                      size={238}
-                      src={<img src={artist.image} alt="avatar" />}
-                    />
-                  }
-                >
-                  <p>
-                    <b>{artist.name}</b>
-                  </p>
-                  <p>artist</p>
-                </Card>
-              </Link>
-            ))}
-          </Space>
+        <div className="flex flex-col space-y-2 flex-wrap md:flex-col md:space-x-4 lg:flex-row lg:space-x-0 justify-between  pl-12">
+          {artists.map((artist) => (
+            <Link href="/artistPage">
+              <Card
+                key={artist.id}
+                className="bg-transparent border-transparent dark:text-slate-300"
+                hoverable
+                style={{ width: 240, height: 320 }}
+                cover={
+                  <Avatar
+                    size={238}
+                    src={<img src={artist.image} alt="avatar" />}
+                  />
+                }
+              >
+                <p>
+                  <b>{artist.name}</b>
+                </p>
+                <p>artist</p>
+              </Card>
+            </Link>
+          ))}
         </div>
         <p className="m-3 dark:text-slate-300">
           <b>follower</b>
         </p>
-        <div className="flex flex-row justify-between  pl-12">
-          <Space direction="horizontal" className="">
-            {artists.map((artist) => (
-              <Link href="/artistPage">
-                <Card
-                  key={artist.id}
-                  className="bg-transparent border-transparent dark:text-slate-300"
-                  hoverable
-                  style={{ width: 240, height: 320 }}
-                  cover={
-                    <Avatar
-                      size={238}
-                      src={<img src={artist.image} alt="avatar" />}
-                    />
-                  }
-                >
-                  <p>
-                    <b>{artist.name}</b>
-                  </p>
-                  <p>artist</p>
-                </Card>
-              </Link>
-            ))}
-          </Space>
+        <div className="flex flex-col space-y-2 flex-wrap md:flex-col md:space-x-4 lg:flex-row lg:space-x-0 justify-between  pl-12">
+          {artists.map((artist) => (
+            <Link href="/artistPage">
+              <Card
+                key={artist.id}
+                className="bg-transparent border-transparent dark:text-slate-300"
+                hoverable
+                style={{ width: 240, height: 320 }}
+                cover={
+                  <Avatar
+                    size={238}
+                    src={<img src={artist.image} alt="avatar" />}
+                  />
+                }
+              >
+                <p>
+                  <b>{artist.name}</b>
+                </p>
+                <p>artist</p>
+              </Card>
+            </Link>
+          ))}
         </div>
       </div>
     </div>

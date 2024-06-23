@@ -8,16 +8,16 @@ import Link from "next/link";
 export default function Headerwithlogin() {
   return (
     <div className="bg-slate-300 rounded-lg  box-content  w-auto p-3 m-5 dark:bg-slate-800 ">
-      <div className="flex flex-row space-x-20 justify-items-center">
-        <div className="flex-row">
-          <Space align="start">
-            <Button shape="circle" icon={<IoIosArrowBack />} />
+      <div className="flex flex-col  md:flex-row space-x-20 justify-items-center">
+        <div className="flex flex-col md:flex-row">
+          {/* <Space align="start"> */}
+          <Button shape="circle" icon={<IoIosArrowBack />} />
 
-            <Button shape="circle" icon={<IoIosArrowForward />} />
-          </Space>
+          <Button shape="circle" icon={<IoIosArrowForward />} />
+          {/* </Space> */}
         </div>
 
-        <div className="flex flex-row justify-items-end justify-end">
+        <div className="flex flex-col md:flex-row justify-items-start md:justify-items-end md:justify-end">
           <div>
             <Button shape="round" className="m-2">
               Explore premium

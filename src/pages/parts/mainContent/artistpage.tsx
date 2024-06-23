@@ -111,16 +111,16 @@ export default function ArtistPage() {
   );
   const showMusicPlayer = useMusicPlayerStore((state) => state.showMusicPlayer);
   return (
-    <div className="">
+    <div className="pt-10">
       <img
         src="https://www.festivalsunited.com/images/artists/alan-walker-46b95031dacb8da.jpg"
-        className="w-full h-1/4 p-3 m-4 rounded-md"
+        className="w-1/9 md:w-1/2 lg:w-full h-1/4 p-3 m-4 rounded-lg "
       />
       <div className="p-3 m-4 dark:text-slate-300">
         <b>Alan walker</b>
         <p>30000000 monthly listener</p>
       </div>
-      <div className="flex flex-row p-3 m-4 dark:text-slate-300">
+      <div className="flex flex-col md:flex-row p-3 m-4 dark:text-slate-300">
         <Button shape="circle" className="m-2" icon={<FaPlay />} />
 
         <Button shape="round" className="m-2">
@@ -158,7 +158,7 @@ export default function ArtistPage() {
           </div>
         ))}
       </div>
-      <Space direction="horizontal" className="">
+      <div className="flex flex-col space-y-3 md:flex-row md:space-x-10">
         <div className="  p-3 m-3 justify-self-end dark:text-slate-300">
           Related artists
         </div>
@@ -170,132 +170,124 @@ export default function ArtistPage() {
             show all
           </Button>
         </div>
-      </Space>
-
-      <div className="flex flex-row justify-between  pl-12">
-        <Space direction="horizontal" className="">
-          {artists.map((artist) => (
-            <Link href="artistPage">
-              <Card
-                key={artist.id}
-                className="bg-transparent border-transparent dark:text-slate-300"
-                hoverable
-                style={{ width: 240, height: 320 }}
-                cover={
-                  <Avatar
-                    size={238}
-                    src={<img src={artist.image} alt="avatar" />}
-                  />
-                }
-              >
-                <p>
-                  <b>{artist.name}</b>
-                </p>
-                <p>artist</p>
-              </Card>
-            </Link>
-          ))}
-        </Space>
       </div>
-      <Space direction="horizontal" className="flex-row">
+
+      <div className="flex flex-col space-y-2 flex-wrap md:flex-col md:space-x-4 lg:flex-row lg:space-x-0 justify-between  pl-12">
+        {artists.map((artist) => (
+          <Link href="artistPage">
+            <Card
+              key={artist.id}
+              className="bg-transparent border-transparent dark:text-slate-300"
+              hoverable
+              style={{ width: 240, height: 320 }}
+              cover={
+                <Avatar
+                  size={238}
+                  src={<img src={artist.image} alt="avatar" />}
+                />
+              }
+            >
+              <p>
+                <b>{artist.name}</b>
+              </p>
+              <p>artist</p>
+            </Card>
+          </Link>
+        ))}
+      </div>
+      <div className="flex flex-col space-y-3 md:flex-row md:space-x-10">
         <div className=" p-3 m-3 justify-self-end dark:text-slate-300">
           Related albums
         </div>
         <div className=" p-3 m-3 justify-self-end">
           <Button type="text">show all</Button>
         </div>
-      </Space>
-      <div className="flex justify-between  pl-12">
-        <Space direction="horizontal" className="">
-          {albums.map((album) => (
-            <Link href="/playListPage">
-              <Card
-                key={album.id}
-                className="bg-transparent border-transparent dark:text-slate-300"
-                hoverable
-                style={{ width: 240, height: 320 }}
-                cover={
-                  <Avatar
-                    shape="square"
-                    size={238}
-                    src={<img src={album.image} alt="avatar" />}
-                  />
-                }
-              >
-                <p>
-                  <b>{album.name}</b>
-                </p>
-                <p>{album.artist}</p>
-              </Card>
-            </Link>
-          ))}
-        </Space>
       </div>
-      <Space direction="horizontal" className="flex-row">
+      <div className="flex flex-col space-y-2 flex-wrap md:flex-col md:space-x-4 lg:flex-row lg:space-x-0 justify-between  pl-12">
+        {albums.map((album) => (
+          <Link href="/playListPage">
+            <Card
+              key={album.id}
+              className="bg-transparent border-transparent dark:text-slate-300"
+              hoverable
+              style={{ width: 240, height: 320 }}
+              cover={
+                <Avatar
+                  shape="square"
+                  size={238}
+                  src={<img src={album.image} alt="avatar" />}
+                />
+              }
+            >
+              <p>
+                <b>{album.name}</b>
+              </p>
+              <p>{album.artist}</p>
+            </Card>
+          </Link>
+        ))}
+      </div>
+      <div className="flex flex-col space-y-3 md:flex-row md:space-x-10">
         <div className="  p-3 m-3 justify-self-end dark:text-slate-300">
           Related radio
         </div>
         <div className=" p-3 m-3 justify-self-end">
           <Button type="text">show all</Button>
         </div>
-      </Space>
-      <div className="flex justify-between pl-12">
-        <Space direction="horizontal" className="">
-          {radio.map((radio) => (
-            <Link href="/playListPage">
-              <Card
-                key={radio.id}
-                className="bg-transparent border-transparent dark:text-slate-300"
-                hoverable
-                style={{ width: 240, height: 320 }}
-                cover={
-                  <Avatar
-                    shape="square"
-                    size={238}
-                    src={<img src={radio.image} alt="avatar" />}
-                  />
-                }
-              >
-                <p>
-                  <b>{radio.name}</b>
-                </p>
-              </Card>
-            </Link>
-          ))}
-        </Space>
       </div>
-      <Space direction="horizontal" className="flex-row">
+      <div className="flex flex-col space-y-2 flex-wrap md:flex-col md:space-x-4 lg:flex-row lg:space-x-0 justify-between  pl-12">
+        {radio.map((radio) => (
+          <Link href="/playListPage">
+            <Card
+              key={radio.id}
+              className="bg-transparent border-transparent dark:text-slate-300"
+              hoverable
+              style={{ width: 240, height: 320 }}
+              cover={
+                <Avatar
+                  shape="square"
+                  size={238}
+                  src={<img src={radio.image} alt="avatar" />}
+                />
+              }
+            >
+              <p>
+                <b>{radio.name}</b>
+              </p>
+            </Card>
+          </Link>
+        ))}
+      </div>
+      <div className="flex flex-col space-y-3 md:flex-row md:space-x-10">
         <div className=" p-3 m-3 justify-self-end dark:text-slate-300">
           Related playlists
         </div>
         <div className=" p-3 m-3 justify-self-end">
           <Button type="text">show all</Button>
         </div>
-      </Space>
-      <div className="flex justify-between pl-12">
-        <Space direction="horizontal" className="">
-          {playlists.map((playlist) => (
-            <Link href="/playListPage">
-              <Card
-                key={playlist.id}
-                className="bg-transparent border-transparent dark:text-slate-300"
-                hoverable
-                style={{ width: 240, height: 320 }}
-                cover={
-                  <Avatar
-                    shape="square"
-                    size={238}
-                    src={<img src={playlist.image} alt="avatar" />}
-                  />
-                }
-              >
-                <p>
-                  <b>{playlist.name}</b>
-                </p>
-              </Card>
-            </Link>
-          ))}
-        </Space>
+      </div>
+      <div className="flex flex-col space-y-2 flex-wrap md:flex-col md:space-x-4 lg:flex-row lg:space-x-0 justify-between  pl-12">
+        {playlists.map((playlist) => (
+          <Link href="/playListPage">
+            <Card
+              key={playlist.id}
+              className="bg-transparent border-transparent dark:text-slate-300"
+              hoverable
+              style={{ width: 240, height: 320 }}
+              cover={
+                <Avatar
+                  shape="square"
+                  size={238}
+                  src={<img src={playlist.image} alt="avatar" />}
+                />
+              }
+            >
+              <p>
+                <b>{playlist.name}</b>
+              </p>
+            </Card>
+          </Link>
+        ))}
       </div>
     </div>
   );

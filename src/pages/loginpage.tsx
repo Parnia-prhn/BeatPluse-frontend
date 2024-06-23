@@ -26,7 +26,7 @@ export default function LoginPage() {
         <form className="flex justify-center m-5 p-5 dark:text-slate-300">
           <div className="flex flex-col">
             <Form.Item className="flex justify-center ">
-              <p>Login with...</p>
+              <p className="dark:text-slate-300">Login with...</p>
             </Form.Item>
             <Form.Item wrapperCol={{ offset: 7, span: 20 }}>
               <Button className="w-1/2" shape="round" icon={<FaGoogle />}>
@@ -44,7 +44,9 @@ export default function LoginPage() {
               </Button>
             </Form.Item>
             <Form.Item>
-              <p>---------------------------------------------------</p>
+              <p className="dark:text-slate-300">
+                ---------------------------------------------------
+              </p>
             </Form.Item>
             <Form.Item
               label="Username"
@@ -52,6 +54,7 @@ export default function LoginPage() {
               rules={[
                 { required: true, message: "Please input your username!" },
               ]}
+              className="dark:text-slate-300"
             >
               <Input className="bg-transparent border-black" />
             </Form.Item>
@@ -71,7 +74,7 @@ export default function LoginPage() {
               valuePropName="checked"
               wrapperCol={{ offset: 8, span: 16 }}
             >
-              <Checkbox>Remember me</Checkbox>
+              <Checkbox className="dark:text-slate-300">Remember me</Checkbox>
             </Form.Item>
 
             <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
@@ -82,14 +85,18 @@ export default function LoginPage() {
               </Link>
             </Form.Item>
             <Form.Item>
-              <p>Forgot your password?</p>
+              <p className="dark:text-slate-300">Forgot your password?</p>
             </Form.Item>
             <Form.Item>
-              <p>---------------------------------------------------</p>
+              <p className="dark:text-slate-300">
+                ---------------------------------------------------
+              </p>
             </Form.Item>
             <Form.Item>
               <Link href="/auth/signup">
-                <p>Don't have an account? signup</p>
+                <p className="dark:text-slate-300">
+                  Don't have an account? signup
+                </p>
               </Link>
             </Form.Item>
           </div>

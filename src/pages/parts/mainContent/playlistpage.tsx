@@ -222,7 +222,7 @@ export default function PlaylistPage() {
 
   return (
     <div>
-      <div className="flex flex-row m-5">
+      <div className="flex flex-col md:flex-row m-5">
         <img
           src="https://i.scdn.co/image/ab67706f00000002583117b5f326c5759bcd4628"
           className="justify-start w-35 m-4 p-3"
@@ -231,7 +231,7 @@ export default function PlaylistPage() {
           <p>
             <b>sad songs</b>
           </p>
-          <div className="flex flex-row m-5">
+          <div className="flex flex-col md:flex-row m-5">
             <Link href="/profilePage">
               <FaUser className="m-3" />
               <p className="m-3">Username</p>
@@ -241,14 +241,14 @@ export default function PlaylistPage() {
         </div>
       </div>
       <div className="flex flex-col m-3 dark:text-slate-300">
-        <div className="flex flex-row">
+        <div className="flex flex-col md:flex-row">
           <FaPlay className="size-9 m-3" />
           <FaShuffle className="size-6 m-3" />
           <MdOutlineDownloadForOffline className="size-6 m-3" />
           <FaUserPlus className="size-6 m-3" />
           <GoKebabHorizontal className="size-6 m-3" />
 
-          <div className="flex flex-row justify-items-end">
+          <div className="flex flex-col md:flex-row justify-items-end">
             <FaSearch className="size-6 m-3" />
             <p className=" m-3">date added</p>
             <TfiMenuAlt className="size-6 m-3" />

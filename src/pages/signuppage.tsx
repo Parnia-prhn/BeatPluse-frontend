@@ -37,7 +37,9 @@ export default function SignupPage() {
               </Button>
             </Form.Item>
             <Form.Item>
-              <p>------------------------or-------------------------</p>
+              <p className="dark:text-slate-300">
+                ------------------------or-------------------------
+              </p>
             </Form.Item>
 
             <Form.Item wrapperCol={{ offset: 7, span: 20 }}>
@@ -56,11 +58,15 @@ export default function SignupPage() {
               </Button>
             </Form.Item>
             <Form.Item>
-              <p>---------------------------------------------------</p>
+              <p className="dark:text-slate-300">
+                ---------------------------------------------------
+              </p>
             </Form.Item>
             <Form.Item>
               <Link href="/auth/login">
-                <p>Do you have an account? login</p>
+                <p className="dark:text-slate-300">
+                  Do you have an account? login
+                </p>
               </Link>
             </Form.Item>
           </div>
