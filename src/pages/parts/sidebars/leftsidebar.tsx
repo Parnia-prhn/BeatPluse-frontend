@@ -4,6 +4,8 @@ import { MdLibraryMusic } from "react-icons/md";
 import { FaPlus } from "react-icons/fa";
 import { useDarkModeStore } from "@/src/store/useDarkModeStore";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import { useRouter, usePathname, useSearchParams } from "next/navigation";
 export default function LeftSideBar() {
   const { darkMode, toggleDarkMode } = useDarkModeStore();
 
@@ -18,6 +20,19 @@ export default function LeftSideBar() {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+  const { t } = useTranslation("common");
+
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const router = useRouter();
+
+  const changeLanguage = (lng: string) => {
+    if (typeof window !== "undefined" && searchParams) {
+      const params = new URLSearchParams(searchParams);
+      params.set("locale", lng);
+      router.push(`${pathname}?${params.toString()}`);
+    }
   };
   return (
     // <div className="relative">
@@ -37,7 +52,7 @@ export default function LeftSideBar() {
           <div>
             <MdLibraryMusic className="w-5 h-6" />
           </div>
-          <div>Your Library</div>
+          <div>{t("your Library")}</div>
           <div>
             <FaPlus className="w-4 h-5 ml-12 mt-1  transition ease-in-out delay-50 hover:text-rose-900 hover:-translate-y-1 hover:scale-110 duration-300" />
           </div>
@@ -50,7 +65,7 @@ export default function LeftSideBar() {
             <div>creat your first playlist</div>
             <div>it's easy! we'll help you </div>
 
-            <Button shape="round">create playlist</Button>
+            <Button shape="round">{t("create playlist")}</Button>
           </Space>
           <Space
             direction="vertical"
@@ -63,7 +78,9 @@ export default function LeftSideBar() {
           </Space>
         </div>
         <div className="flex justify-center flex-row mt-4">
-          <Button shape="round">fa/en</Button>
+          <Button shape="round" onClick={() => changeLanguage("fa")}>
+            fa/en
+          </Button>
           <Switch
             checked={darkMode}
             onChange={toggleDarkMode}
