@@ -5,8 +5,10 @@ import { FaSearch } from "react-icons/fa";
 import { SiBigbluebutton } from "react-icons/si";
 import { Space, theme } from "antd";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export default function TopSideBar() {
+export default async function TopSideBar() {
   // const [collapsed, setCollapsed] = useState(false);
   // const {
   //   token: { colorBgContainer, borderRadiusLG },
@@ -40,6 +42,7 @@ export default function TopSideBar() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const t = await getTranslations("topsidebar");
   return (
     // <div className="relative">
     //   <button className="block sm:hidden p-4" onClick={toggleMenu}>
@@ -64,7 +67,7 @@ export default function TopSideBar() {
             <SiBigbluebutton className="" />
           </div>
           <Link href="/HomePage/withLogin">
-            <div className="">BEAT +</div>
+            <div className="">{t("BEAT +")}</div>
           </Link>
         </div>
         <div className="flex flex-row justify-center space-x-2 transition ease-in-out delay-50 hover:text-rose-900 hover:-translate-y-1 hover:scale-110 duration-300 text-slate-800 dark:text-slate-100">
@@ -72,7 +75,7 @@ export default function TopSideBar() {
             <AiFillHome className="" />
           </div>
           <Link href="/HomePage/withoutLogin">
-            <div className="">Home</div>
+            <div className="">{t("Home")}</div>
           </Link>
         </div>
         <div className="flex flex-row justify-center space-x-2 transition ease-in-out delay-50 hover:text-rose-900 hover:-translate-y-1 hover:scale-110 duration-300 text-slate-800 dark:text-slate-100">
@@ -80,7 +83,7 @@ export default function TopSideBar() {
             <FaSearch className="" />
           </div>
           <Link href="Search/searchPageWithoutLogin">
-            <div className="">Search</div>
+            <div className="">{t("Search")}</div>
           </Link>
         </div>
       </Space>

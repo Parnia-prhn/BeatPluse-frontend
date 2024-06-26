@@ -1,0 +1,130 @@
+{
+  "headersearch": {
+    "signup": "ثبت نام",
+    "login": "ورود"
+  },
+  "headerwithlogin": {
+    "Explore premium": "پرمیوم"
+  },
+  "headerwithoutlogin": {
+    "signup": "ثبت نام",
+    "login": "ورود"
+  },
+  "artistpage": {
+    "30000000 monthly listener": "30000000 شنونده ماهانه",
+    "follow": "دنبال کردن",
+    "popular": "محبوب",
+    "Related artists": "هنرمندان مربوط",
+    "show all": "نمایش همه",
+    "artist": "هنرمند",
+    "Related albums": "آلبوم های مربوط",
+    "Related radio": "رادیو های مربوط",
+    "Related playlists": "لیست پخش های مربوط"
+  },
+  "mainhomepagewithlogin": {
+    ".playlist": ".لیست پخش",
+    "artists": "هنرمندان",
+    "show all": "نمایش همه",
+    "artist": "هنرمند",
+    "albums": "آلبوم ها",
+    "radio": "رادیو",
+    "playlists": "لیست های پخش"
+  },
+  "mainhomepagewithoutlogin": {
+    "Popular artists": "هنرمندان مشهور",
+    "show all": "نمایش همه",
+    "artist": "هنرمند",
+    "Popular albums": "آلبوم های مشهور",
+    "Popular radio": "رادیو های مشهور",
+    "BEATplus playlists": "لیست پخش های بیت پلاس"
+  },
+  "notificationpage": {
+    "Whats new?": "چه چیزی جدید است؟",
+    "the latest releases": "اخرین منتشر شده ها",
+    "New": "جدید",
+    "description": "توضیحات"
+  },
+  "playlistpage": {
+    "sad songs": "آهنگ های غمگین",
+    "Username": "نام کاربری",
+    "5 songs, 19 min 20 sec": "5 آهنگ ، 19 دقیقه ، 20 ثانیه",
+    "date added": "تاریخ اضافه شدن"
+  },
+  "profilePage": {
+    "Username": "نام کاربری",
+    "2 follower": "2 دنبال کننده",
+    "10 following": "10 دنبال شونده",
+    "Top Artist of this month": "هنرمندان برتر این ماه",
+    "artist": "هنرمند",
+    "your playlists": "لیست های پخش ما",
+    "following": "دنبال شدگان",
+    "follower": "دنبال کنندگان"
+  },
+  "searchpagewithoutresult": {
+    "Podcasts": "پادکست ها",
+    "Live Events": "رویداد های زنده",
+    "Made for you": "ساخته شده برای شما",
+    "New Releases": "منشتر شده های جدید",
+    "Hip-Hop": "هیپ هاپ",
+    "pop": "پاپ",
+    "Mood": "مود",
+    "Dance/Electronic": "رقص/الکترونیک",
+    "Podcast Charts": "چارت های پادکست",
+    "Podcast Releases": "پادکست های منتشر شده"
+  },
+  "searchresult": {
+    "playlists": "لیست های پخش",
+    "show all": "نمایش همه",
+    "albums": "آلبوم ها",
+    "artists": "هنرمندان",
+    "artist": "هنرمند"
+  },
+  "whenplaywithoutloginmodal": {
+    "start listening with a free BEAT+ account": "با ساخت یک اکانت رایگان بیت پلاس شنیدن را شروع کنید",
+    "signup free": "رایگان ثبت نام کنید",
+    "login": "ورود"
+  },
+  "leftsidebar": {
+    "your Library": "کتابخانه شما",
+    "creat your first playlist": "اولین لیست پخش خود را بسازید",
+    "it's easy! we'll help you": "ساده است ما به شما کمک میکنیم",
+    "create playlist": "ساخت لیست پخش",
+    "fa/en": "فا/ان"
+  },
+  "leftsidebarwithlogin": {
+    "Your Library": "کتابخانه شما",
+    ".playlist": ".لیست پخش",
+    "fa/en": "فا/ان",
+    "Dark": "تاریک",
+    "Light": "روشن"
+  },
+  "rightsidebarQueue": {
+    ".playlist": ".لیست پخش"
+  },
+  "topsidebar": {
+    "BEAT +": "بیت پلاس",
+    "Home": "خانه",
+    "Search": "جستجو"
+  },
+  "loginpage": {
+    "Login with...": "ورود با ...",
+    "Google": "گوگل",
+    "Facebook": "فیسبوک",
+    "apple": "اپل",
+    "Username": "نام کاربری",
+    "username": "نام کاربری",
+    "Password": "رمز عبور",
+    "password": "رمز عبور",
+    "Remember me": "مرا به یاد داشته باش",
+    "submit": "تایید و ارسال",
+    "Forgot your password?": "رمز عبور خود را فراموش کرده اید؟",
+    "Don't have an account? signup": "حساب ندارید؟ ثبت نام"
+  },
+  "signuppage": {
+    "next": "بعدی",
+    "Google": "گوگل",
+    "Facebook": "فیسبوک",
+    "apple": "اپل",
+    "Do you have an account? login": "حساب دارید؟ ورود"
+  }
+}

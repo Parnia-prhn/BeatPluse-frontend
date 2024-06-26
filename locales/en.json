@@ -1,0 +1,130 @@
+{
+  "headersearch": {
+    "signup": "Signup",
+    "login": "Login"
+  },
+  "headerwithlogin": {
+    "Explore premium": "Explore premium"
+  },
+  "headerwithoutlogin": {
+    "signup": "Signup",
+    "login": "Login"
+  },
+  "artistpage": {
+    "30000000 monthly listener": "30000000 monthly listener",
+    "follow": "follow",
+    "popular": "popular",
+    "Related artists": "Related artists",
+    "show all": "show all",
+    "artist": "artist",
+    "Related albums": "Related albums",
+    "Related radio": "Related radio",
+    "Related playlists": "Related playlists"
+  },
+  "mainhomepagewithlogin": {
+    ".playlist": ".playlist",
+    "artists": "artists",
+    "show all": "show all",
+    "artist": "artist",
+    "albums": "albums",
+    "radio": "radio",
+    "playlists": "playlists"
+  },
+  "mainhomepagewithoutlogin": {
+    "Popular artists": "Popular artists",
+    "show all": "show all",
+    "artist": "artist",
+    "Popular albums": "Popular albums",
+    "Popular radio": "Popular radio",
+    "BEATplus playlists": "BEATplus playlists"
+  },
+  "notificationpage": {
+    "Whats new?": "Whats new?",
+    "the latest releases": "the latest releases",
+    "New": "New",
+    "description": "description"
+  },
+  "playlistpage": {
+    "sad songs": "sad songs",
+    "Username": "Username",
+    "5 songs, 19 min 20 sec": "5 songs, 19 min 20 sec",
+    "date added": "date added"
+  },
+  "profilePage": {
+    "Username": "Username",
+    "2 follower": "2 follower",
+    "10 following": "10 following",
+    "Top Artist of this month": "Top Artist of this month",
+    "artist": "artist",
+    "your playlists": "your playlists",
+    "following": "following",
+    "follower": "follower"
+  },
+  "searchpagewithoutresult": {
+    "Podcasts": "Podcasts",
+    "Live Events": "Live Events",
+    "Made for you": "Made for you",
+    "New Releases": "New Releases",
+    "Hip-Hop": "Hip-Hop",
+    "pop": "pop",
+    "Mood": "Mood",
+    "Dance/Electronic": "Dance/Electronic",
+    "Podcast Charts": "Podcast Charts",
+    "Podcast Releases": "Podcast Releases"
+  },
+  "searchresult": {
+    "playlists": "playlists",
+    "show all": "show all",
+    "albums": "albums",
+    "artists": "artists",
+    "artist": "artist"
+  },
+  "whenplaywithoutloginmodal": {
+    "start listening with a free BEAT+ account": "start listening with a free BEAT+ account",
+    "signup free": "signup free",
+    "login": "login"
+  },
+  "leftsidebar": {
+    "your Library": "your Library",
+    "creat your first playlist": "creat your first playlist",
+    "it's easy! we'll help you": "it's easy! we'll help you",
+    "create playlist": "create playlist",
+    "fa/en": "fa/en"
+  },
+  "leftsidebarwithlogin": {
+    "Your Library": "Your Library",
+    ".playlist": ".playlist",
+    "fa/en": "fa/en",
+    "Dark": "Dark",
+    "Light": "Light"
+  },
+  "rightsidebarQueue": {
+    ".playlist": ".playlist"
+  },
+  "topsidebar": {
+    "BEAT +": "BEAT +",
+    "Home": "Home",
+    "Search": "Search"
+  },
+  "loginpage": {
+    "Login with...": "Login with...",
+    "Google": "Google",
+    "Facebook": "Facebook",
+    "apple": "apple",
+    "Username": "Username",
+    "username": "username",
+    "Password": "Password",
+    "password": "password",
+    "Remember me": "Remember me",
+    "submit": "submit",
+    "Forgot your password?": "Forgot your password?",
+    "Don't have an account? signup": "Don't have an account? signup"
+  },
+  "signuppage": {
+    "next": "next",
+    "Google": "Google",
+    "Facebook": "Facebook",
+    "apple": "apple",
+    "Do you have an account? login": "Do you have an account? login"
+  }
+}
