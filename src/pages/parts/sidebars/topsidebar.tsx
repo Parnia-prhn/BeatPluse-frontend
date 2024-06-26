@@ -42,7 +42,7 @@ export default async function TopSideBar() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  const t = await getTranslations("topsidebar");
+  const t = await useTranslations("topsidebar");
   return (
     // <div className="relative">
     //   <button className="block sm:hidden p-4" onClick={toggleMenu}>
