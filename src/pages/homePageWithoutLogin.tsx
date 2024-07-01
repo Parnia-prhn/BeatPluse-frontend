@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-// import Headerwithoutlogin from "./parts/headers/headerwithoutlogin";
+import Headerwithoutlogin from "./parts/headers/headerwithoutlogin";
 import LeftSideBar from "./parts/sidebars/leftsidebar";
 import TopSideBar from "./parts/sidebars/topsidebar";
-// import Mainhomepagewithoutlogin from "./parts/mainContent/mainhomepagewithoutlogin";
+import Mainhomepagewithoutlogin from "./parts/mainContent/mainhomepagewithoutlogin";
 import { Layout, ConfigProvider } from "antd";
 import Theme from "../../themeConfig";
 import theme from "../../darkTheme";
@@ -14,20 +14,20 @@ import { Skeleton } from "antd";
 import { Spin } from "antd";
 const { Header, Content, Footer, Sider } = Layout;
 
-const Headerwithoutlogin = dynamic(
-  () => import("./parts/headers/headerwithoutlogin"),
-  {
-    loading: () => <Skeleton active />,
-    ssr: false,
-  }
-);
-const Mainhomepagewithoutlogin = dynamic(
-  () => import("./parts/mainContent/mainhomepagewithoutlogin"),
-  {
-    loading: () => <Spin />,
-    ssr: false,
-  }
-);
+// const Headerwithoutlogin = dynamic(
+//   () => import("./parts/headers/headerwithoutlogin"),
+//   {
+//     loading: () => <Skeleton active />,
+//     ssr: false,
+//   }
+// );
+// const Mainhomepagewithoutlogin = dynamic(
+//   () => import("./parts/mainContent/mainhomepagewithoutlogin"),
+//   {
+//     loading: () => <Spin />,
+//     ssr: false,
+//   }
+// );
 
 export default function HomePageWithoutLogin() {
   const { darkMode, toggleDarkMode } = useDarkModeStore();
