@@ -5,8 +5,8 @@ import { FaSearch } from "react-icons/fa";
 import { SiBigbluebutton } from "react-icons/si";
 import { Space, theme } from "antd";
 import Link from "next/link";
-// import { useTranslations } from "next-intl";
-// import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 // import { NextIntlClientProvider } from "next-intl";
 export default async function TopSideBar() {
   // const [collapsed, setCollapsed] = useState(false);
@@ -43,7 +43,7 @@ export default async function TopSideBar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // const t = await useTranslations("index.topsidebar");
+  const t = await useTranslations("index.topsidebar");
   return (
     // <div className="relative">
     //   <button className="block sm:hidden p-4" onClick={toggleMenu}>
@@ -68,7 +68,7 @@ export default async function TopSideBar() {
             <SiBigbluebutton className="" />
           </div>
           <Link href="/HomePage/withLogin">
-            <div className="">BEAT +</div>
+            <div className="">{t("BEAT +")}</div>
           </Link>
         </div>
         <div className="flex flex-row justify-center space-x-2 transition ease-in-out delay-50 hover:text-rose-900 hover:-translate-y-1 hover:scale-110 duration-300 text-slate-800 dark:text-slate-100">

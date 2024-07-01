@@ -31,19 +31,19 @@ export default async function RootLayout({
   // }: Readonly<{
   //   children: React.ReactNode;
   children,
-}: // params: { locale },
-{
+  params: { locale },
+}: {
   children: React.ReactNode;
-  // params: { locale: string };
+  params: { locale: string };
 }) {
   // const messages = await getMessages();
   return (
-    // <html lang={locale}>
-    <html>
+    <html lang={locale}>
+      {/* <html> */}
       <body>
-        {/* <NextIntlClientProvider locale={locale}> */}
-        {children}
-        {/* </NextIntlClientProvider> */}
+        <NextIntlClientProvider locale={locale}>
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );
